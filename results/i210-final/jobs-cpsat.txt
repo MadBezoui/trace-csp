@@ -1,0 +1,13 @@
+--mode degrade --seed 5 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/degrade-s5.json
+--mode soft --seed 5 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/soft-s5.json
+--mode degrade --seed 6 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/degrade-s6.json
+--mode soft --seed 6 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/soft-s6.json
+--mode degrade --seed 7 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/degrade-s7.json
+--mode soft --seed 7 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/soft-s7.json
+--mode degrade --seed 8 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/degrade-s8.json
+--mode soft --seed 8 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/soft-s8.json
+--mode degrade --seed 9 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/degrade-s9.json
+--mode soft --seed 9 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/soft-s9.json
+--mode degrade --seed 5 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --state oracle --output results/i210-final/ablation-oracle-s5.json
+--mode degrade --seed 5 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --no-congestion --output results/i210-final/ablation-nocongestion-s5.json
+--mode hard --seed 5 --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 --seconds 25200 --output results/i210-final/ablation-hard-s5.json

@@ -1,0 +1,8 @@
+scope: synthetic CTM closed-loop matrix (results in results/final/closed-loop-v3)
+controllers: [fixed, alinea, hero_proxy, cp_sat, warm_cp_sat, learned_cp_sat]
+families: [normal, mild_incident, severe_incident, sensor_fault, demand_shift, communication_fault, compound, structural_ood]
+demand_levels: [0.7, 1.0, 1.4]
+incident_severity_multipliers_per_mille: [1000, 800, 500]
+seeds: 30
+periods: 12
+expected_closed_loop_runs: 12960

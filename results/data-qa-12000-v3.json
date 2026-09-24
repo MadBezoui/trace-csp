@@ -1,0 +1,118 @@
+{
+  "instances": 12000,
+  "labelled": 12000,
+  "status": {
+    "OPTIMAL": 10498,
+    "INFEASIBLE": 1500,
+    "FEASIBLE": 2
+  },
+  "split": {
+    "train": 5220,
+    "test_ood_demand": 1500,
+    "test_ood_structure": 1500,
+    "test_ood_incident": 300,
+    "validation": 1740,
+    "test_id": 1740
+  },
+  "family": {
+    "normal": 1500,
+    "mild_incident": 1500,
+    "severe_incident": 1500,
+    "sensor_fault": 1500,
+    "demand_shift": 1500,
+    "communication_fault": 1500,
+    "compound": 1500,
+    "structural_ood": 1500
+  },
+  "group_leaks": [],
+  "duplicate_ids": [],
+  "core_positives": 1500,
+  "label_balance": {
+    "train": {
+      "active": {
+        "positives": 160832,
+        "labelled": 259200
+      },
+      "violation": {
+        "positives": 7200,
+        "labelled": 135720
+      },
+      "core": {
+        "positives": 900,
+        "labelled": 62640
+      }
+    },
+    "test_ood_demand": {
+      "active": {
+        "positives": 55838,
+        "labelled": 90000
+      },
+      "violation": {
+        "positives": 0,
+        "labelled": 39000
+      },
+      "core": {
+        "positives": 0,
+        "labelled": 18000
+      }
+    },
+    "test_ood_structure": {
+      "active": {
+        "positives": 64875,
+        "labelled": 108000
+      },
+      "violation": {
+        "positives": 0,
+        "labelled": 48000
+      },
+      "core": {
+        "positives": 0,
+        "labelled": 18000
+      }
+    },
+    "test_ood_incident": {
+      "active": {
+        "positives": 11167,
+        "labelled": 18000
+      },
+      "violation": {
+        "positives": 0,
+        "labelled": 7800
+      },
+      "core": {
+        "positives": 0,
+        "labelled": 3600
+      }
+    },
+    "validation": {
+      "active": {
+        "positives": 53611,
+        "labelled": 86400
+      },
+      "violation": {
+        "positives": 2400,
+        "labelled": 45240
+      },
+      "core": {
+        "positives": 300,
+        "labelled": 20880
+      }
+    },
+    "test_id": {
+      "active": {
+        "positives": 53606,
+        "labelled": 86400
+      },
+      "violation": {
+        "positives": 2400,
+        "labelled": 45240
+      },
+      "core": {
+        "positives": 300,
+        "labelled": 20880
+      }
+    }
+  },
+  "source_sha256": "d47b5cef38e218f0cf8dcbc199899ee669667b74545463b0e93e11eeae02f5f6",
+  "labels_sha256": "be9ea4dbb2b55679ca30dc30d73f1dcbbda04c4fdf26303b7a5664d13a8dd12e"
+}

@@ -1,0 +1,625 @@
+{
+  "scope": "synthetic v3; physics = CTM replay + monotone queue bound, no training",
+  "splits": {
+    "test_id": {
+      "auprc": {
+        "active_ineq": {
+          "positives": 1766,
+          "n": 34560,
+          "physics": 0.06123850457195588,
+          "mlp": {
+            "median": 0.2992950957461067,
+            "min": 0.2992950957461067,
+            "max": 0.2992950957461067
+          },
+          "bipartite": {
+            "median": 0.3055016990110297,
+            "min": 0.30547910437839243,
+            "max": 0.6107692213280407
+          },
+          "hgt": {
+            "median": 0.6106895356214085,
+            "min": 0.3055081991616975,
+            "max": 0.6107356885187949
+          }
+        },
+        "violation": {
+          "positives": 2400,
+          "n": 45240,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.666478730243244,
+            "min": 0.06299703804869085,
+            "max": 0.666478730243244
+          },
+          "bipartite": {
+            "median": 0.6197650018125483,
+            "min": 0.6183674966362638,
+            "max": 0.9627329941703548
+          },
+          "hgt": {
+            "median": 0.6090785309419083,
+            "min": 0.09179523013518609,
+            "max": 0.8854692332626259
+          }
+        },
+        "core": {
+          "positives": 300,
+          "n": 20880,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.0833098412804055,
+            "min": 0.0833098412804055,
+            "max": 0.0833098412804055
+          },
+          "bipartite": {
+            "median": 0.1660753693081839,
+            "min": 0.1643299467680521,
+            "max": 0.20332439320378057
+          },
+          "hgt": {
+            "median": 0.12496493795215313,
+            "min": 0.08633667300653529,
+            "max": 0.18487888602716548
+          }
+        }
+      },
+      "top1_core_sufficiency": {
+        "physics": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        },
+        "mlp-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed1": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed2": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed4": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed0": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed1": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed3": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed1": {
+          "valid": 141,
+          "checked": 150,
+          "matches_label": 109
+        },
+        "hgt-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "solver_label": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        }
+      },
+      "infeasible": 300,
+      "physics_certified": 300,
+      "median_physics_certificate_s": 0.00012952050019521266,
+      "median_cpsat_infeasible_s": 0.005359645998396445
+    },
+    "test_ood_demand": {
+      "auprc": {
+        "active_ineq": {
+          "positives": 182,
+          "n": 3600,
+          "physics": 0.060666666666666674,
+          "mlp": {
+            "median": 0.30820791108894197,
+            "min": 0.30820791108894197,
+            "max": 0.30820791108894197
+          },
+          "bipartite": {
+            "median": 0.30333333333333334,
+            "min": 0.30333333333333334,
+            "max": 0.6066666666666667
+          },
+          "hgt": {
+            "median": 0.6066666666666667,
+            "min": 0.30333333333333334,
+            "max": 0.6066666666666667
+          }
+        },
+        "violation": {
+          "positives": 600,
+          "n": 7800,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.3144316936932749,
+            "min": 0.1068435082551413,
+            "max": 0.3144316936932749
+          },
+          "bipartite": {
+            "median": 0.6659674840984394,
+            "min": 0.45775209985428245,
+            "max": 0.8539028260729696
+          },
+          "hgt": {
+            "median": 0.3756302839132247,
+            "min": 0.13461544238355388,
+            "max": 0.7186770865934526
+          }
+        },
+        "core": {
+          "positives": 150,
+          "n": 3600,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.07860792342331872,
+            "min": 0.07860792342331872,
+            "max": 0.07860792342331872
+          },
+          "bipartite": {
+            "median": 0.31659779255606274,
+            "min": 0.3155277405286151,
+            "max": 0.3933814254698763
+          },
+          "hgt": {
+            "median": 0.12230548347403655,
+            "min": 0.08119089004029315,
+            "max": 0.361309188738173
+          }
+        }
+      },
+      "top1_core_sufficiency": {
+        "physics": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        },
+        "mlp-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed1": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed2": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed4": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed0": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed1": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed3": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed1": {
+          "valid": 4,
+          "checked": 150,
+          "matches_label": 2
+        },
+        "hgt-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "solver_label": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        }
+      },
+      "infeasible": 150,
+      "physics_certified": 150,
+      "median_physics_certificate_s": 0.000129624499095371,
+      "median_cpsat_infeasible_s": 0.005722271002014168
+    },
+    "test_ood_structure": {
+      "auprc": {
+        "active_ineq": {
+          "positives": 184,
+          "n": 4500,
+          "physics": 0.05575757575757576,
+          "mlp": {
+            "median": 0.29254604899069675,
+            "min": 0.29254604899069675,
+            "max": 0.29254604899069675
+          },
+          "bipartite": {
+            "median": 0.30666666666666664,
+            "min": 0.30666666666666664,
+            "max": 0.6133333333333333
+          },
+          "hgt": {
+            "median": 0.6133333333333333,
+            "min": 0.30666666666666664,
+            "max": 0.6133333333333333
+          }
+        },
+        "violation": {
+          "positives": 600,
+          "n": 9600,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.3063897181815331,
+            "min": 0.10810794535221836,
+            "max": 0.3063897181815331
+          },
+          "bipartite": {
+            "median": 0.6659174851567188,
+            "min": 0.45660670236228745,
+            "max": 0.8261699237021347
+          },
+          "hgt": {
+            "median": 0.3612586335757974,
+            "min": 0.16071991001548203,
+            "max": 0.6743323192618866
+          }
+        },
+        "core": {
+          "positives": 150,
+          "n": 3600,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.07659742954538327,
+            "min": 0.07659742954538327,
+            "max": 0.07659742954538327
+          },
+          "bipartite": {
+            "median": 0.3153238061101381,
+            "min": 0.3146237899004624,
+            "max": 0.38905968479232933
+          },
+          "hgt": {
+            "median": 0.11875636938929914,
+            "min": 0.07918229944785767,
+            "max": 0.358540130696107
+          }
+        }
+      },
+      "top1_core_sufficiency": {
+        "physics": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        },
+        "mlp-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed1": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed2": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed4": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed0": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed1": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed3": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed1": {
+          "valid": 25,
+          "checked": 150,
+          "matches_label": 3
+        },
+        "hgt-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "solver_label": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        }
+      },
+      "infeasible": 150,
+      "physics_certified": 150,
+      "median_physics_certificate_s": 0.00014385400208993815,
+      "median_cpsat_infeasible_s": 0.0067975624988321215
+    },
+    "test_ood_incident": {
+      "auprc": {
+        "active_ineq": {
+          "positives": 184,
+          "n": 3600,
+          "physics": 0.06133333333333333,
+          "mlp": {
+            "median": 0.3039032623106859,
+            "min": 0.3039032623106859,
+            "max": 0.3039032623106859
+          },
+          "bipartite": {
+            "median": 0.30666666666666664,
+            "min": 0.30666666666666664,
+            "max": 0.6133333333333333
+          },
+          "hgt": {
+            "median": 0.6133333333333333,
+            "min": 0.30666666666666664,
+            "max": 0.6133333333333333
+          }
+        },
+        "violation": {
+          "positives": 600,
+          "n": 7800,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.3192859964928537,
+            "min": 0.10669855203514424,
+            "max": 0.3192859964928537
+          },
+          "bipartite": {
+            "median": 0.6660488453020204,
+            "min": 0.4749855107923463,
+            "max": 0.8749581946359359
+          },
+          "hgt": {
+            "median": 0.37410141973233396,
+            "min": 0.1199219808431202,
+            "max": 0.7330999671938493
+          }
+        },
+        "core": {
+          "positives": 150,
+          "n": 3600,
+          "physics": 1.0,
+          "mlp": {
+            "median": 0.07982149912321343,
+            "min": 0.07982149912321343,
+            "max": 0.07982149912321343
+          },
+          "bipartite": {
+            "median": 0.3169400174857135,
+            "min": 0.31671738896185386,
+            "max": 0.39269401366534284
+          },
+          "hgt": {
+            "median": 0.12452408677806834,
+            "min": 0.08318234317330685,
+            "max": 0.35811741093683735
+          }
+        }
+      },
+      "top1_core_sufficiency": {
+        "physics": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        },
+        "mlp-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed1": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed2": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "mlp-seed4": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed0": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed1": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed3": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "bipartite-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed0": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed1": {
+          "valid": 5,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed2": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed3": {
+          "valid": 0,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "hgt-seed4": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 0
+        },
+        "solver_label": {
+          "valid": 150,
+          "checked": 150,
+          "matches_label": 150
+        }
+      },
+      "infeasible": 150,
+      "physics_certified": 150,
+      "median_physics_certificate_s": 0.0001283959973079618,
+      "median_cpsat_infeasible_s": 0.005086917000880931
+    }
+  }
+}

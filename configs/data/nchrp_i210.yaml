@@ -1,0 +1,6 @@
+source: https://github.com/NCHRP-BSM-Traffic-Measures/CAT-Data-For-Freeway-Operations
+revision: eb8bbf2781f4a5c437ea9283901b2df78e6fd135
+original_sumo_version: 1.15.0
+local_path: data/raw/i210
+benchmark: Ramp Metering/run_fewIncidents_ALINEA_benchmark
+simulation_seconds: 25200

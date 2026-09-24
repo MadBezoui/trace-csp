@@ -1,0 +1,14 @@
+{
+  "scenario": "NCHRP I-210 ALINEA benchmark",
+  "upstream_revision": "eb8bbf2781f4a5c437ea9283901b2df78e6fd135",
+  "seconds_requested": 25200,
+  "seed": 5,
+  "returncode": 0,
+  "recovered_existing": true,
+  "last_stdout": "",
+  "last_stderr": "",
+  "arrived_trips": 107341,
+  "completed_trip_duration_s": 58049366.0,
+  "completed_trip_waiting_s": 1122383.0,
+  "tripinfo_path": "data/raw/i210/Ramp Metering/run_fewIncidents_ALINEA_benchmark/SUMO (few incidents)/SUMO (few incidents)/Output_randomseed_5/trace_tripinfo_5_25200.xml"
+}

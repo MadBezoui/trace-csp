@@ -1,0 +1,463 @@
+{
+  "scope": "synthetic CTM closed loop; not SUMO",
+  "cells": 2160,
+  "overall": {
+    "alinea": {
+      "episodes": 2160,
+      "halted": 1796,
+      "completed_steps": 14833,
+      "requested_steps": 25920,
+      "fallbacks": 0
+    },
+    "cp_sat": {
+      "episodes": 2160,
+      "halted": 270,
+      "completed_steps": 22680,
+      "requested_steps": 25920,
+      "fallbacks": 0
+    },
+    "fixed": {
+      "episodes": 2160,
+      "halted": 270,
+      "completed_steps": 22680,
+      "requested_steps": 25920,
+      "fallbacks": 0
+    },
+    "hero_proxy": {
+      "episodes": 2160,
+      "halted": 1799,
+      "completed_steps": 14823,
+      "requested_steps": 25920,
+      "fallbacks": 3208
+    },
+    "learned_cp_sat": {
+      "episodes": 2160,
+      "halted": 270,
+      "completed_steps": 22680,
+      "requested_steps": 25920,
+      "fallbacks": 0
+    },
+    "warm_cp_sat": {
+      "episodes": 2160,
+      "halted": 270,
+      "completed_steps": 22680,
+      "requested_steps": 25920,
+      "fallbacks": 0
+    }
+  },
+  "halts_by_family": {
+    "communication_fault": {
+      "alinea": {
+        "halted": 223,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 224,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "compound": {
+      "alinea": {
+        "halted": 270,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 270,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 270,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 270,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 270,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 270,
+        "episodes": 270
+      }
+    },
+    "demand_shift": {
+      "alinea": {
+        "halted": 240,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 240,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "mild_incident": {
+      "alinea": {
+        "halted": 226,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 226,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "normal": {
+      "alinea": {
+        "halted": 215,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 218,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "sensor_fault": {
+      "alinea": {
+        "halted": 220,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 220,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "severe_incident": {
+      "alinea": {
+        "halted": 238,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 238,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    },
+    "structural_ood": {
+      "alinea": {
+        "halted": 164,
+        "episodes": 270
+      },
+      "cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "fixed": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "hero_proxy": {
+        "halted": 163,
+        "episodes": 270
+      },
+      "learned_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      },
+      "warm_cp_sat": {
+        "halted": 0,
+        "episodes": 270
+      }
+    }
+  },
+  "paired_on_jointly_completed": {
+    "alinea": 364,
+    "cp_sat": 1890,
+    "fixed": 1890,
+    "hero_proxy": 361,
+    "learned_cp_sat": 1890,
+    "warm_cp_sat": 1890
+  },
+  "paired_tests_controller_minus_reference": {
+    "total_time_spent:alinea-vs-cp_sat": {
+      "n": 364,
+      "mean_difference": 14.752747252747254,
+      "median_difference": 0.0,
+      "std_difference": 47.91169986722812,
+      "ci95": [
+        9.861263736263737,
+        19.807692307692307
+      ],
+      "wilcoxon_p": 6.613962889266665e-09,
+      "cohen_dz": 0.307915337874251,
+      "holm_p": 2.645585155706666e-08
+    },
+    "total_time_spent:fixed-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 12.777777777777779,
+      "median_difference": 0.0,
+      "std_difference": 56.30551100883884,
+      "ci95": [
+        10.359391534391534,
+        15.497486772486772
+      ],
+      "wilcoxon_p": 4.564547496715635e-27,
+      "cohen_dz": 0.22693653869462124,
+      "holm_p": 2.2822737483578177e-26
+    },
+    "total_time_spent:hero_proxy-vs-cp_sat": {
+      "n": 361,
+      "mean_difference": 14.875346260387811,
+      "median_difference": 0.0,
+      "std_difference": 48.0919082643304,
+      "ci95": [
+        10.137811634349031,
+        20.499307479224374
+      ],
+      "wilcoxon_p": 6.613962889266665e-09,
+      "cohen_dz": 0.30931079254804295,
+      "holm_p": 2.645585155706666e-08
+    },
+    "total_time_spent:learned_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "std_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_p": 1.0,
+      "cohen_dz": null,
+      "holm_p": 1.0
+    },
+    "total_time_spent:warm_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "std_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_p": 1.0,
+      "cohen_dz": null,
+      "holm_p": 1.0
+    },
+    "worst_ramp_waiting:alinea-vs-cp_sat": {
+      "n": 364,
+      "mean_difference": 99.3076923076923,
+      "median_difference": 109.0,
+      "std_difference": 42.37090386555854,
+      "ci95": [
+        95.18949175824176,
+        103.60789835164834
+      ],
+      "wilcoxon_p": 1.863919005263815e-61,
+      "cohen_dz": 2.3437709193741134,
+      "holm_p": 7.45567602105526e-61
+    },
+    "worst_ramp_waiting:fixed-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 99.54074074074074,
+      "median_difference": 97.0,
+      "std_difference": 17.10601829216987,
+      "ci95": [
+        98.7608201058201,
+        100.30636243386243
+      ],
+      "wilcoxon_p": 2.16834582268866e-310,
+      "cohen_dz": 5.8190479538014195,
+      "holm_p": 1.084172911344332e-309
+    },
+    "worst_ramp_waiting:hero_proxy-vs-cp_sat": {
+      "n": 361,
+      "mean_difference": 96.05540166204986,
+      "median_difference": 102.0,
+      "std_difference": 39.97571804534594,
+      "ci95": [
+        91.97749307479224,
+        100.04716066481994
+      ],
+      "wilcoxon_p": 5.8399229348664594e-61,
+      "cohen_dz": 2.4028436850862978,
+      "holm_p": 1.7519768804599378e-60
+    },
+    "worst_ramp_waiting:learned_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.13597883597883598,
+      "median_difference": 0.0,
+      "std_difference": 0.6652747491644547,
+      "ci95": [
+        0.10793650793650794,
+        0.16560846560846562
+      ],
+      "wilcoxon_p": 1.5134039156913168e-20,
+      "cohen_dz": 0.20439500544642233,
+      "holm_p": 3.0268078313826336e-20
+    },
+    "worst_ramp_waiting:warm_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.0962962962962963,
+      "median_difference": 0.0,
+      "std_difference": 0.6089477833918675,
+      "ci95": [
+        0.07037037037037037,
+        0.12435185185185177
+      ],
+      "wilcoxon_p": 4.6616266509435e-13,
+      "cohen_dz": 0.1581355559912238,
+      "holm_p": 4.6616266509435e-13
+    },
+    "throughput:alinea-vs-cp_sat": {
+      "n": 364,
+      "mean_difference": -0.17032967032967034,
+      "median_difference": 0.0,
+      "std_difference": 0.5687925455634912,
+      "ci95": [
+        -0.23076923076923078,
+        -0.11263736263736264
+      ],
+      "wilcoxon_p": 5.362581907031674e-09,
+      "cohen_dz": -0.2994583379445105,
+      "holm_p": 2.1450327628126697e-08
+    },
+    "throughput:fixed-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": -0.24285714285714285,
+      "median_difference": 0.0,
+      "std_difference": 1.0390798377282708,
+      "ci95": [
+        -0.29313492063492064,
+        -0.19894179894179895
+      ],
+      "wilcoxon_p": 8.177656437705231e-27,
+      "cohen_dz": -0.23372327518942032,
+      "holm_p": 4.0888282188526155e-26
+    },
+    "throughput:hero_proxy-vs-cp_sat": {
+      "n": 361,
+      "mean_difference": -0.17174515235457063,
+      "median_difference": 0.0,
+      "std_difference": 0.5709441511751893,
+      "ci95": [
+        -0.23822714681440443,
+        -0.11634349030470914
+      ],
+      "wilcoxon_p": 5.362581907031674e-09,
+      "cohen_dz": -0.3008090230910731,
+      "holm_p": 2.1450327628126697e-08
+    },
+    "throughput:learned_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "std_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_p": 1.0,
+      "cohen_dz": null,
+      "holm_p": 1.0
+    },
+    "throughput:warm_cp_sat-vs-cp_sat": {
+      "n": 1890,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "std_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wilcoxon_p": 1.0,
+      "cohen_dz": null,
+      "holm_p": 1.0
+    }
+  }
+}

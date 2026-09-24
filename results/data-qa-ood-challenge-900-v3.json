@@ -1,0 +1,67 @@
+{
+  "instances": 900,
+  "labelled": 900,
+  "status": {
+    "INFEASIBLE": 450,
+    "OPTIMAL": 450
+  },
+  "split": {
+    "test_ood_demand": 300,
+    "test_ood_structure": 300,
+    "test_ood_incident": 300
+  },
+  "family": {
+    "demand_shift": 300,
+    "structural_ood": 300,
+    "severe_incident": 300
+  },
+  "group_leaks": [],
+  "duplicate_ids": [],
+  "core_positives": 450,
+  "label_balance": {
+    "test_ood_demand": {
+      "active": {
+        "positives": 5582,
+        "labelled": 9000
+      },
+      "violation": {
+        "positives": 600,
+        "labelled": 7800
+      },
+      "core": {
+        "positives": 150,
+        "labelled": 3600
+      }
+    },
+    "test_ood_structure": {
+      "active": {
+        "positives": 6484,
+        "labelled": 10800
+      },
+      "violation": {
+        "positives": 600,
+        "labelled": 9600
+      },
+      "core": {
+        "positives": 150,
+        "labelled": 3600
+      }
+    },
+    "test_ood_incident": {
+      "active": {
+        "positives": 5584,
+        "labelled": 9000
+      },
+      "violation": {
+        "positives": 600,
+        "labelled": 7800
+      },
+      "core": {
+        "positives": 150,
+        "labelled": 3600
+      }
+    }
+  },
+  "source_sha256": "69cac48550b3cc16925c8ec92c11b6a7b2885d9cbdd980e9463efcbb972a01f0",
+  "labels_sha256": "dbda50ea6250ebed9baada78343b2bb7afbbbbdcaede2a3b6cb28fbc985f83d1"
+}

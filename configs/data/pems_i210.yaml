@@ -1,0 +1,10 @@
+source: https://dot.ca.gov/programs/traffic-operations/mpr/pems-source
+access: registered Caltrans PeMS account (raw data not redistributed)
+district: 7
+corridor: I-210 eastbound
+station_metadata: d07_text_meta_2023_12_22.txt
+days: 81 days of 5-minute station data in January, April, May and August 2026
+min_percent_observed: 75
+calibration_dates: January and April 2026 weekdays
+validation_dates: May and August 2026 weekdays
+outputs: [results/pems-fd-i210-calibration.csv, results/pems-i210e-calibration.json]

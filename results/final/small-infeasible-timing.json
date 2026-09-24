@@ -1,0 +1,3613 @@
+{
+ "instances": 300,
+ "status": {
+  "INFEASIBLE": 300
+ },
+ "median_cpsat_s": 0.006760062497050967,
+ "median_capacity_s": 1.7687503714114428e-05,
+ "median_interval_s": 7.66039956943132e-05,
+ "capacity_certified": 300,
+ "interval_certified": 300,
+ "rows": [
+  {
+   "id": "synthetic-0000086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.011942582990741357,
+   "capacity_s": 3.125000512227416e-05,
+   "interval_s": 0.00013725001190323383,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006979083002079278,
+   "capacity_s": 2.216600114479661e-05,
+   "interval_s": 8.566600445192307e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00634483399335295,
+   "capacity_s": 1.8416991224512458e-05,
+   "interval_s": 7.437499880325049e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006642333988565952,
+   "capacity_s": 1.4625009498558939e-05,
+   "interval_s": 7.091699808370322e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006403958992450498,
+   "capacity_s": 4.162501136306673e-05,
+   "interval_s": 8.537499525118619e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007102083007339388,
+   "capacity_s": 2.029100141953677e-05,
+   "interval_s": 7.604200800415128e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006441040997742675,
+   "capacity_s": 1.6582998796366155e-05,
+   "interval_s": 7.366698991972953e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007039583011646755,
+   "capacity_s": 2.5457993615418673e-05,
+   "interval_s": 0.00010329100769013166,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006341749991406687,
+   "capacity_s": 2.895800571423024e-05,
+   "interval_s": 8.308399992529303e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007863374994485639,
+   "capacity_s": 2.1624990040436387e-05,
+   "interval_s": 8.291700214613229e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006582125002751127,
+   "capacity_s": 1.59579940373078e-05,
+   "interval_s": 7.37080117687583e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007417040993459523,
+   "capacity_s": 1.9333005184307694e-05,
+   "interval_s": 7.574999472126365e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006576874991878867,
+   "capacity_s": 1.554099435452372e-05,
+   "interval_s": 7.216700760181993e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006381874991348013,
+   "capacity_s": 2.4249995476566255e-05,
+   "interval_s": 8.349999552592635e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0062436250009341165,
+   "capacity_s": 1.4999997802078724e-05,
+   "interval_s": 7.554100011475384e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006323666995740496,
+   "capacity_s": 1.3665994629263878e-05,
+   "interval_s": 7.016699237283319e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0064508329960517585,
+   "capacity_s": 1.808301021810621e-05,
+   "interval_s": 6.816600216552615e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006389166999724694,
+   "capacity_s": 1.3708006008528173e-05,
+   "interval_s": 6.916699931025505e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005844625004101545,
+   "capacity_s": 1.3459008187055588e-05,
+   "interval_s": 6.758300878573209e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006930542003829032,
+   "capacity_s": 1.4250006643123925e-05,
+   "interval_s": 6.84160040691495e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007996082989848219,
+   "capacity_s": 1.3457989552989602e-05,
+   "interval_s": 6.874999962747097e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006297624990111217,
+   "capacity_s": 1.3416996807791293e-05,
+   "interval_s": 6.954200216569006e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007354458008194342,
+   "capacity_s": 2.1792002371512353e-05,
+   "interval_s": 8.033298945520073e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006684166000923142,
+   "capacity_s": 1.92909938050434e-05,
+   "interval_s": 8.441600948572159e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0000998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006746500002918765,
+   "capacity_s": 1.5958998119458556e-05,
+   "interval_s": 7.124998955987394e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00700837500335183,
+   "capacity_s": 1.883300137706101e-05,
+   "interval_s": 7.61660048738122e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006143958002212457,
+   "capacity_s": 2.6708003133535385e-05,
+   "interval_s": 8.65840120241046e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006641041996772401,
+   "capacity_s": 1.6582998796366155e-05,
+   "interval_s": 0.00015645800158381462,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007594957991386764,
+   "capacity_s": 1.4083008863963187e-05,
+   "interval_s": 7.191600161604583e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0068042500060983,
+   "capacity_s": 1.5166995581239462e-05,
+   "interval_s": 6.808299804106355e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.01166400000511203,
+   "capacity_s": 2.549999044276774e-05,
+   "interval_s": 8.445800631307065e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007805000001098961,
+   "capacity_s": 1.8165999790653586e-05,
+   "interval_s": 7.758299761917442e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0067928750067949295,
+   "capacity_s": 2.241700713057071e-05,
+   "interval_s": 0.00010666700836736709,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006875958002638072,
+   "capacity_s": 1.9875005818903446e-05,
+   "interval_s": 7.929200364742428e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006407584005501121,
+   "capacity_s": 2.6125009753741324e-05,
+   "interval_s": 8.625000191386789e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006734082999173552,
+   "capacity_s": 2.108400803990662e-05,
+   "interval_s": 7.895899761933833e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006829790989286266,
+   "capacity_s": 1.7082988051697612e-05,
+   "interval_s": 7.21669930499047e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006824833995779045,
+   "capacity_s": 1.3666998711414635e-05,
+   "interval_s": 7.008299871813506e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007011833004071377,
+   "capacity_s": 1.3875003787688911e-05,
+   "interval_s": 6.887500057928264e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006434125010855496,
+   "capacity_s": 2.508299075998366e-05,
+   "interval_s": 0.00010387499060016125,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00636145900352858,
+   "capacity_s": 2.533300721552223e-05,
+   "interval_s": 8.199999865610152e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007041042001219466,
+   "capacity_s": 2.3415996110998094e-05,
+   "interval_s": 8.470799366477877e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007190667005488649,
+   "capacity_s": 2.095899253617972e-05,
+   "interval_s": 8.299999171867967e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007008250002400018,
+   "capacity_s": 2.0499996026046574e-05,
+   "interval_s": 8.345801325049251e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007206249996670522,
+   "capacity_s": 1.6833990230225027e-05,
+   "interval_s": 7.399999594781548e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006502000003820285,
+   "capacity_s": 2.491599298082292e-05,
+   "interval_s": 8.145799802150577e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006919084000401199,
+   "capacity_s": 2.058300015050918e-05,
+   "interval_s": 8.279099711216986e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.010993125004461035,
+   "capacity_s": 2.3959000827744603e-05,
+   "interval_s": 8.254199929069728e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006794750006520189,
+   "capacity_s": 1.6165999113582075e-05,
+   "interval_s": 7.266699685715139e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0001998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0060745419905288145,
+   "capacity_s": 1.3083990779705346e-05,
+   "interval_s": 6.725000275764614e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007005791994743049,
+   "capacity_s": 2.174999099224806e-05,
+   "interval_s": 8.20829882286489e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006617959006689489,
+   "capacity_s": 2.28749995585531e-05,
+   "interval_s": 8.266599616035819e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006493791996035725,
+   "capacity_s": 1.6624995623715222e-05,
+   "interval_s": 7.404200732707977e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005961125003523193,
+   "capacity_s": 1.3374999980442226e-05,
+   "interval_s": 6.833299994468689e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006862791997264139,
+   "capacity_s": 2.025000867433846e-05,
+   "interval_s": 8.399999933317304e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006602082998142578,
+   "capacity_s": 2.0749997929669917e-05,
+   "interval_s": 8.399999933317304e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006714374991133809,
+   "capacity_s": 1.5583995264023542e-05,
+   "interval_s": 7.199999527074397e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006844749994343147,
+   "capacity_s": 1.3167009456083179e-05,
+   "interval_s": 6.683400715701282e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0069016250054119155,
+   "capacity_s": 1.9332990632392466e-05,
+   "interval_s": 8.391699520871043e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007880207995185629,
+   "capacity_s": 1.704200985841453e-05,
+   "interval_s": 7.64170108595863e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00743979201070033,
+   "capacity_s": 2.4084001779556274e-05,
+   "interval_s": 8.854198676999658e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006867208008770831,
+   "capacity_s": 2.9040995286777616e-05,
+   "interval_s": 8.700000762473792e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007002541999099776,
+   "capacity_s": 2.5832996470853686e-05,
+   "interval_s": 8.724999497644603e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006392999988747761,
+   "capacity_s": 2.0292005501687527e-05,
+   "interval_s": 7.929099956527352e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006655167002463713,
+   "capacity_s": 1.5416997484862804e-05,
+   "interval_s": 7.333300891332328e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00710537499981001,
+   "capacity_s": 2.1624990040436387e-05,
+   "interval_s": 8.450000314041972e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007592915993882343,
+   "capacity_s": 2.708299143705517e-05,
+   "interval_s": 7.870899571571499e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006724375009071082,
+   "capacity_s": 1.5583005733788013e-05,
+   "interval_s": 7.266599277500063e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008327167000970803,
+   "capacity_s": 2.7999994927085936e-05,
+   "interval_s": 8.766699465923011e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006112040995503776,
+   "capacity_s": 1.4749995898455381e-05,
+   "interval_s": 7.320800796151161e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007184875008533709,
+   "capacity_s": 2.170899824704975e-05,
+   "interval_s": 8.729200635571033e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0068865829962305725,
+   "capacity_s": 1.5208002878353e-05,
+   "interval_s": 7.583299884572625e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00755716698768083,
+   "capacity_s": 1.5708996215835214e-05,
+   "interval_s": 7.508300768677145e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006502083997474983,
+   "capacity_s": 2.824999683070928e-05,
+   "interval_s": 8.4708008216694e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0002998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006445041988627054,
+   "capacity_s": 1.4374993043020368e-05,
+   "interval_s": 7.108399586286396e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006384167005307972,
+   "capacity_s": 1.3625001884065568e-05,
+   "interval_s": 6.874999962747097e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007230374991195276,
+   "capacity_s": 1.3832992408424616e-05,
+   "interval_s": 6.912498793099076e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006961332997889258,
+   "capacity_s": 2.3917004000395536e-05,
+   "interval_s": 9.908300125971437e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008319208995089866,
+   "capacity_s": 1.3958997442387044e-05,
+   "interval_s": 7.075000030454248e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.01000041700899601,
+   "capacity_s": 3.0125011107884347e-05,
+   "interval_s": 9.604200022295117e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006758666000678204,
+   "capacity_s": 1.649999467190355e-05,
+   "interval_s": 7.324999023694545e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005908291990635917,
+   "capacity_s": 1.2916003470309079e-05,
+   "interval_s": 6.86249986756593e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006056375001207925,
+   "capacity_s": 1.274999522138387e-05,
+   "interval_s": 6.654200842604041e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006592791993170977,
+   "capacity_s": 1.3415992725640535e-05,
+   "interval_s": 6.800000846851617e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006625333000556566,
+   "capacity_s": 2.549999044276774e-05,
+   "interval_s": 8.516700472682714e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006298334003076889,
+   "capacity_s": 2.516699896659702e-05,
+   "interval_s": 9.804200090002269e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007044790996587835,
+   "capacity_s": 1.7708007362671196e-05,
+   "interval_s": 7.604200800415128e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007237792000523768,
+   "capacity_s": 2.5375004042871296e-05,
+   "interval_s": 8.570798672735691e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.009233999997377396,
+   "capacity_s": 1.662501017563045e-05,
+   "interval_s": 7.666699821129441e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006450042012147605,
+   "capacity_s": 1.3666998711414635e-05,
+   "interval_s": 7.095899491105229e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006705042003886774,
+   "capacity_s": 2.445800055284053e-05,
+   "interval_s": 9.645899990573525e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006873874997836538,
+   "capacity_s": 1.562500256113708e-05,
+   "interval_s": 7.383301272056997e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005968665995169431,
+   "capacity_s": 1.2833013897761703e-05,
+   "interval_s": 6.750000466126949e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006210583000211045,
+   "capacity_s": 1.3249999028630555e-05,
+   "interval_s": 6.729199958499521e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007000875004450791,
+   "capacity_s": 1.5083001926541328e-05,
+   "interval_s": 7.037499744910747e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00688370899297297,
+   "capacity_s": 2.604200562927872e-05,
+   "interval_s": 8.66250047693029e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006511625004350208,
+   "capacity_s": 1.708300260361284e-05,
+   "interval_s": 0.00014350000128615648,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006112584000220522,
+   "capacity_s": 1.4250006643123925e-05,
+   "interval_s": 7.287500193342566e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007354417000897229,
+   "capacity_s": 1.5792000340297818e-05,
+   "interval_s": 7.000000914558768e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0003998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005974792002234608,
+   "capacity_s": 1.3083001249469817e-05,
+   "interval_s": 6.791700434405357e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0063990420021582395,
+   "capacity_s": 1.4249992091208696e-05,
+   "interval_s": 6.829199264757335e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006365584005834535,
+   "capacity_s": 1.691699435468763e-05,
+   "interval_s": 7.341698801610619e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00688145900494419,
+   "capacity_s": 1.833400165196508e-05,
+   "interval_s": 7.958299829624593e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006383416999597102,
+   "capacity_s": 1.5999990864656866e-05,
+   "interval_s": 7.320799340959638e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006449624997912906,
+   "capacity_s": 1.679199340287596e-05,
+   "interval_s": 7.241699495352805e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007307959007448517,
+   "capacity_s": 2.7166999643668532e-05,
+   "interval_s": 9.004099410958588e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006663625012151897,
+   "capacity_s": 1.8000006093643606e-05,
+   "interval_s": 7.62919953558594e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007129833000362851,
+   "capacity_s": 1.5083001926541328e-05,
+   "interval_s": 7.383299816865474e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006995791001827456,
+   "capacity_s": 1.958299253601581e-05,
+   "interval_s": 8.287500531878322e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007099542010109872,
+   "capacity_s": 2.2500011255033314e-05,
+   "interval_s": 8.57920094858855e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006866833005915396,
+   "capacity_s": 2.0417006453499198e-05,
+   "interval_s": 7.658299000468105e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00607395799306687,
+   "capacity_s": 1.3041993952356279e-05,
+   "interval_s": 6.716701318509877e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006174916998133995,
+   "capacity_s": 1.5083001926541328e-05,
+   "interval_s": 7.262500002980232e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006874041006085463,
+   "capacity_s": 1.4040997484698892e-05,
+   "interval_s": 7.283299055416137e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007486709000659175,
+   "capacity_s": 2.3792003048583865e-05,
+   "interval_s": 8.304200309794396e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006846000003861263,
+   "capacity_s": 1.4958990504965186e-05,
+   "interval_s": 7.120899681467563e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0062207919982029125,
+   "capacity_s": 1.316699490416795e-05,
+   "interval_s": 6.920899613760412e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0065847079968079925,
+   "capacity_s": 1.6457997844554484e-05,
+   "interval_s": 7.429199467878789e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.011428958998294547,
+   "capacity_s": 2.791700535453856e-05,
+   "interval_s": 8.904199057724327e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007347749997279607,
+   "capacity_s": 1.983299443963915e-05,
+   "interval_s": 7.87499884609133e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006692124996334314,
+   "capacity_s": 2.4375010980293155e-05,
+   "interval_s": 8.066599548328668e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.011392250002245419,
+   "capacity_s": 2.87910079350695e-05,
+   "interval_s": 8.875000639818609e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00676124999881722,
+   "capacity_s": 1.5875004464760423e-05,
+   "interval_s": 7.558299694210291e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008451125002466142,
+   "capacity_s": 2.3540997062809765e-05,
+   "interval_s": 8.604201138950884e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0004998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006460832999437116,
+   "capacity_s": 1.60830095410347e-05,
+   "interval_s": 7.03330006217584e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00720016700506676,
+   "capacity_s": 2.6292007532902062e-05,
+   "interval_s": 8.675000572111458e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006529125006636605,
+   "capacity_s": 1.8040998838841915e-05,
+   "interval_s": 7.800001185387373e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007115500004147179,
+   "capacity_s": 2.1458006813190877e-05,
+   "interval_s": 8.245899516623467e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006797458001528867,
+   "capacity_s": 1.462499494664371e-05,
+   "interval_s": 7.375000859610736e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006188083993038163,
+   "capacity_s": 1.3749988283962011e-05,
+   "interval_s": 6.858300184831023e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007079791001160629,
+   "capacity_s": 1.562500256113708e-05,
+   "interval_s": 7.037499744910747e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007795958008500747,
+   "capacity_s": 2.5832996470853686e-05,
+   "interval_s": 0.00012145900109317154,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006601750006666407,
+   "capacity_s": 1.4749995898455381e-05,
+   "interval_s": 7.279199780896306e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006485374993644655,
+   "capacity_s": 1.2832999345846474e-05,
+   "interval_s": 6.670899165328592e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006269874997087754,
+   "capacity_s": 1.2917007552459836e-05,
+   "interval_s": 6.812500942032784e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007398125002509914,
+   "capacity_s": 2.1792002371512353e-05,
+   "interval_s": 7.945801189634949e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0069151670031715184,
+   "capacity_s": 1.4875011402182281e-05,
+   "interval_s": 7.066599209792912e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008922584005631506,
+   "capacity_s": 1.4250006643123925e-05,
+   "interval_s": 7.004100189078599e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006833916995674372,
+   "capacity_s": 2.012500772252679e-05,
+   "interval_s": 8.350001007784158e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006910541997058317,
+   "capacity_s": 2.4791996111162007e-05,
+   "interval_s": 8.625000191386789e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006655416989815421,
+   "capacity_s": 2.504199801478535e-05,
+   "interval_s": 9.229200077243149e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006895291997352615,
+   "capacity_s": 2.0042003598064184e-05,
+   "interval_s": 8.204201003536582e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007115458996850066,
+   "capacity_s": 2.0749997929669917e-05,
+   "interval_s": 8.195800182875246e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006512083011330105,
+   "capacity_s": 1.8999999156221747e-05,
+   "interval_s": 7.866699888836592e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006433791990275495,
+   "capacity_s": 1.995800994336605e-05,
+   "interval_s": 8.191600500140339e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00645904200791847,
+   "capacity_s": 2.0083010895177722e-05,
+   "interval_s": 7.862500206101686e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00677170799463056,
+   "capacity_s": 1.8291000742465258e-05,
+   "interval_s": 7.758299761917442e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006697042001178488,
+   "capacity_s": 2.2541993530467153e-05,
+   "interval_s": 8.554199303034693e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006751958993845619,
+   "capacity_s": 2.0458988728933036e-05,
+   "interval_s": 7.854100840631872e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0005998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006627125010709278,
+   "capacity_s": 1.837499439716339e-05,
+   "interval_s": 7.88750039646402e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0067977910075569525,
+   "capacity_s": 2.6541005354374647e-05,
+   "interval_s": 8.154100214596838e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006285124996793456,
+   "capacity_s": 1.7833997844718397e-05,
+   "interval_s": 7.687498873565346e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0064866669999901205,
+   "capacity_s": 1.9333005184307694e-05,
+   "interval_s": 7.937500777188689e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006998334007221274,
+   "capacity_s": 2.21250083995983e-05,
+   "interval_s": 7.987499702721834e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007234208998852409,
+   "capacity_s": 2.012499317061156e-05,
+   "interval_s": 7.912499131634831e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0064971249958034605,
+   "capacity_s": 1.637499372009188e-05,
+   "interval_s": 7.566699059680104e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0069357080064946786,
+   "capacity_s": 3.0750001315027475e-05,
+   "interval_s": 8.729100227355957e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00658724999811966,
+   "capacity_s": 1.6000005416572094e-05,
+   "interval_s": 7.44159915484488e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006718666001688689,
+   "capacity_s": 1.4833000022917986e-05,
+   "interval_s": 0.00010037500760518014,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0067492920061340556,
+   "capacity_s": 1.7874990589916706e-05,
+   "interval_s": 7.679099508095533e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006758874995284714,
+   "capacity_s": 1.7457990907132626e-05,
+   "interval_s": 7.175000791903585e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0071749590133549646,
+   "capacity_s": 2.195900015067309e-05,
+   "interval_s": 8.31669894978404e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006516458000987768,
+   "capacity_s": 1.6375008272007108e-05,
+   "interval_s": 7.537500641774386e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00711379200220108,
+   "capacity_s": 2.3208005586639047e-05,
+   "interval_s": 8.095799421425909e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006520332986838184,
+   "capacity_s": 2.1750005544163287e-05,
+   "interval_s": 8.275000436697155e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007055374997435138,
+   "capacity_s": 2.3832995793782175e-05,
+   "interval_s": 8.7417007307522e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.01132825000968296,
+   "capacity_s": 1.9749990315176547e-05,
+   "interval_s": 7.662500138394535e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0063659169973107055,
+   "capacity_s": 1.9791987142525613e-05,
+   "interval_s": 7.504099630750716e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006175249989610165,
+   "capacity_s": 1.3541997759602964e-05,
+   "interval_s": 7.03330006217584e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00647583301179111,
+   "capacity_s": 1.4499993994832039e-05,
+   "interval_s": 7.166599971242249e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006806749996030703,
+   "capacity_s": 1.8457998521625996e-05,
+   "interval_s": 7.991699385456741e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006581957990420051,
+   "capacity_s": 2.3916989448480308e-05,
+   "interval_s": 8.40419961605221e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006772500011720695,
+   "capacity_s": 1.754100958351046e-05,
+   "interval_s": 0.00013279099948704243,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006907499991939403,
+   "capacity_s": 1.4334000297822058e-05,
+   "interval_s": 7.337500574067235e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0006998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.01148545800242573,
+   "capacity_s": 1.908399281091988e-05,
+   "interval_s": 7.570898742415011e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006061125008272938,
+   "capacity_s": 1.370901009067893e-05,
+   "interval_s": 6.883400783408433e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006284832998062484,
+   "capacity_s": 1.3124998076818883e-05,
+   "interval_s": 6.904199835844338e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006912708005984314,
+   "capacity_s": 2.129099448211491e-05,
+   "interval_s": 7.866599480621517e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00790108299406711,
+   "capacity_s": 1.6292004147544503e-05,
+   "interval_s": 7.449999975506216e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005845416002557613,
+   "capacity_s": 1.2750009773299098e-05,
+   "interval_s": 6.75409974064678e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006048042007023469,
+   "capacity_s": 1.3166005373932421e-05,
+   "interval_s": 6.920799205545336e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006185208010720089,
+   "capacity_s": 1.2542004697024822e-05,
+   "interval_s": 6.791700434405357e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006768708000890911,
+   "capacity_s": 2.141699951607734e-05,
+   "interval_s": 0.00012416600657161325,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0072078330122167245,
+   "capacity_s": 2.824999683070928e-05,
+   "interval_s": 9.32080001803115e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007053499997709878,
+   "capacity_s": 2.0207997295074165e-05,
+   "interval_s": 8.104099833872169e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006507375001092441,
+   "capacity_s": 1.8125007045455277e-05,
+   "interval_s": 7.720799476373941e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006898040999658406,
+   "capacity_s": 1.7124999430961907e-05,
+   "interval_s": 7.599999662488699e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006780125011573546,
+   "capacity_s": 1.8999999156221747e-05,
+   "interval_s": 8.087500464171171e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006889208001666702,
+   "capacity_s": 3.8291997043415904e-05,
+   "interval_s": 9.383300493936986e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006771458007278852,
+   "capacity_s": 1.6416001017205417e-05,
+   "interval_s": 7.241599087137729e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0061693749885307625,
+   "capacity_s": 1.3749988283962011e-05,
+   "interval_s": 7.058298797346652e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006773415996576659,
+   "capacity_s": 2.2334003006108105e-05,
+   "interval_s": 9.574998694006354e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006633707991568372,
+   "capacity_s": 1.679199340287596e-05,
+   "interval_s": 7.541599916294217e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00642462499672547,
+   "capacity_s": 2.3290995159186423e-05,
+   "interval_s": 0.00010841700714081526,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006213999993633479,
+   "capacity_s": 1.6624995623715222e-05,
+   "interval_s": 7.537499186582863e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006491624997579493,
+   "capacity_s": 1.6166988643817604e-05,
+   "interval_s": 7.38749949960038e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006674000003840774,
+   "capacity_s": 1.9333005184307694e-05,
+   "interval_s": 7.687500328756869e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00686275000043679,
+   "capacity_s": 1.6749996575526893e-05,
+   "interval_s": 8.016600622795522e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0065850829996634275,
+   "capacity_s": 2.3582993890158832e-05,
+   "interval_s": 9.158399188891053e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0007998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.009963167001842521,
+   "capacity_s": 1.5834011719562113e-05,
+   "interval_s": 7.550000736955553e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.009285375010222197,
+   "capacity_s": 4.879100015386939e-05,
+   "interval_s": 0.00010416698933113366,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006604374997550622,
+   "capacity_s": 1.7124999430961907e-05,
+   "interval_s": 7.658299000468105e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006076916994061321,
+   "capacity_s": 1.4042001566849649e-05,
+   "interval_s": 7.2750000981614e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006983917002798989,
+   "capacity_s": 1.937500201165676e-05,
+   "interval_s": 8.487499144393951e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007552041002782062,
+   "capacity_s": 1.6541991499252617e-05,
+   "interval_s": 8.983399311546236e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0065734999952837825,
+   "capacity_s": 2.8084003133699298e-05,
+   "interval_s": 9.524999768473208e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006940249993931502,
+   "capacity_s": 2.2124993847683072e-05,
+   "interval_s": 8.204201003536582e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006548334000399336,
+   "capacity_s": 1.766700006555766e-05,
+   "interval_s": 7.870899571571499e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006605791990295984,
+   "capacity_s": 1.94160093087703e-05,
+   "interval_s": 8.183300087694079e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006335874990327284,
+   "capacity_s": 2.112500078510493e-05,
+   "interval_s": 7.708300836384296e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007508709008106962,
+   "capacity_s": 2.6249996153637767e-05,
+   "interval_s": 8.270800753962249e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006498125003417954,
+   "capacity_s": 1.6707999748177826e-05,
+   "interval_s": 7.612499757669866e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005949208003585227,
+   "capacity_s": 1.3249999028630555e-05,
+   "interval_s": 6.712500180583447e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0074514580046525225,
+   "capacity_s": 2.274999860674143e-05,
+   "interval_s": 8.933299977798015e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006538875008118339,
+   "capacity_s": 2.6292007532902062e-05,
+   "interval_s": 8.545801392756402e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006396416007191874,
+   "capacity_s": 5.0457994802854955e-05,
+   "interval_s": 8.370800060220063e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006773375003831461,
+   "capacity_s": 1.608299498911947e-05,
+   "interval_s": 7.529200229328126e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007002749989624135,
+   "capacity_s": 1.3832992408424616e-05,
+   "interval_s": 7.016600284259766e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.009752625002874993,
+   "capacity_s": 1.6999998479150236e-05,
+   "interval_s": 7.595799979753792e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006628040995565243,
+   "capacity_s": 2.029100141953677e-05,
+   "interval_s": 8.312500722240657e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.011407999991206452,
+   "capacity_s": 1.9041995983570814e-05,
+   "interval_s": 7.999999797903001e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008768749990849756,
+   "capacity_s": 1.5166995581239462e-05,
+   "interval_s": 7.204200665000826e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006819083995651454,
+   "capacity_s": 1.462499494664371e-05,
+   "interval_s": 7.066599209792912e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007007209002040327,
+   "capacity_s": 2.387499262113124e-05,
+   "interval_s": 8.066601003520191e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0008998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0070631249982398,
+   "capacity_s": 1.7333004507236183e-05,
+   "interval_s": 7.341599848587066e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006081291998270899,
+   "capacity_s": 1.3917000615037978e-05,
+   "interval_s": 0.00013066599785815924,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007290958994417451,
+   "capacity_s": 2.012499317061156e-05,
+   "interval_s": 7.787499635014683e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0066818749910453334,
+   "capacity_s": 1.6582998796366155e-05,
+   "interval_s": 7.454201113432646e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007171791992732324,
+   "capacity_s": 2.3124986910261214e-05,
+   "interval_s": 8.508400060236454e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006859000000986271,
+   "capacity_s": 1.5875004464760423e-05,
+   "interval_s": 7.337500574067235e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006242374991416,
+   "capacity_s": 2.8624999686144292e-05,
+   "interval_s": 9.212500299327075e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006805917000747286,
+   "capacity_s": 1.6292004147544503e-05,
+   "interval_s": 7.570799789391458e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00768854099442251,
+   "capacity_s": 1.4124991139397025e-05,
+   "interval_s": 7.258300320245326e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006215957997483201,
+   "capacity_s": 1.4500008546747267e-05,
+   "interval_s": 7.008299871813506e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006299083004705608,
+   "capacity_s": 2.433299960102886e-05,
+   "interval_s": 8.700000762473792e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007263124993187375,
+   "capacity_s": 2.1041007130406797e-05,
+   "interval_s": 7.962500967551023e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007095709006534889,
+   "capacity_s": 2.54580081673339e-05,
+   "interval_s": 0.00010462499631103128,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006089582995628007,
+   "capacity_s": 1.5792000340297818e-05,
+   "interval_s": 7.395799912046641e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006588040996575728,
+   "capacity_s": 1.333300315309316e-05,
+   "interval_s": 6.679201032966375e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0065523329976713285,
+   "capacity_s": 2.8124995878897607e-05,
+   "interval_s": 9.312501060776412e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007317791008972563,
+   "capacity_s": 2.2916996385902166e-05,
+   "interval_s": 8.72919918037951e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006129125002189539,
+   "capacity_s": 1.4833989553153515e-05,
+   "interval_s": 7.354200351983309e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00701320799998939,
+   "capacity_s": 5.9708996559493244e-05,
+   "interval_s": 0.00011199999426025897,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006619250008952804,
+   "capacity_s": 1.4625009498558939e-05,
+   "interval_s": 7.004100189078599e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.005947084006038494,
+   "capacity_s": 1.3291995855979621e-05,
+   "interval_s": 6.804200529586524e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006633334007347003,
+   "capacity_s": 1.4292003470472991e-05,
+   "interval_s": 6.891699740663171e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007462959008989856,
+   "capacity_s": 2.21250083995983e-05,
+   "interval_s": 8.074998913798481e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006680417005554773,
+   "capacity_s": 1.4792007277719676e-05,
+   "interval_s": 8.087500464171171e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007168500000261702,
+   "capacity_s": 2.7875008527189493e-05,
+   "interval_s": 9.729199518915266e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0009998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0062137079949025065,
+   "capacity_s": 1.6165999113582075e-05,
+   "interval_s": 7.35829962650314e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007403416006127372,
+   "capacity_s": 1.3958007912151515e-05,
+   "interval_s": 7.112498860806227e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0059091670118505135,
+   "capacity_s": 1.3584009138867259e-05,
+   "interval_s": 6.841699359938502e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0069959170068614185,
+   "capacity_s": 1.5624988009221852e-05,
+   "interval_s": 7.470799027942121e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006699375007883646,
+   "capacity_s": 2.7332993340678513e-05,
+   "interval_s": 9.108299855142832e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006870791999972425,
+   "capacity_s": 1.824999344535172e-05,
+   "interval_s": 7.587501022499055e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006168209001771174,
+   "capacity_s": 1.6542006051167846e-05,
+   "interval_s": 7.687500328756869e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007273415991221555,
+   "capacity_s": 1.60830095410347e-05,
+   "interval_s": 7.520800863858312e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006430291992728598,
+   "capacity_s": 1.3791999663226306e-05,
+   "interval_s": 6.883300375193357e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00605637498665601,
+   "capacity_s": 3.445900802034885e-05,
+   "interval_s": 9.624999074731022e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00714762500138022,
+   "capacity_s": 2.5457993615418673e-05,
+   "interval_s": 7.654099317733198e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00753416599764023,
+   "capacity_s": 2.1792002371512353e-05,
+   "interval_s": 8.087499008979648e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007632542008650489,
+   "capacity_s": 1.7416998161934316e-05,
+   "interval_s": 7.612501212861389e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.008991291993879713,
+   "capacity_s": 2.254200808238238e-05,
+   "interval_s": 8.658299339003861e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.010811959000420757,
+   "capacity_s": 1.6249992768280208e-05,
+   "interval_s": 7.541599916294217e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006737957999575883,
+   "capacity_s": 2.0457999198697507e-05,
+   "interval_s": 8.566600445192307e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007030083012068644,
+   "capacity_s": 1.6792007954791188e-05,
+   "interval_s": 7.695799286011606e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0063772909925319254,
+   "capacity_s": 1.3082986697554588e-05,
+   "interval_s": 6.799999391660094e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0062272499926621094,
+   "capacity_s": 1.3582990504801273e-05,
+   "interval_s": 6.820799899287522e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.010617916996125132,
+   "capacity_s": 2.791700535453856e-05,
+   "interval_s": 8.895799692254514e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006676334000076167,
+   "capacity_s": 1.604200224392116e-05,
+   "interval_s": 7.766699127387255e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006346875001327135,
+   "capacity_s": 1.737500133458525e-05,
+   "interval_s": 7.02499964972958e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0067297089990461245,
+   "capacity_s": 1.2999997125007212e-05,
+   "interval_s": 6.52919989079237e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006512457999633625,
+   "capacity_s": 1.7541999113745987e-05,
+   "interval_s": 7.566600106656551e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006004833005135879,
+   "capacity_s": 1.3665994629263878e-05,
+   "interval_s": 6.916699931025505e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0010998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007108791993232444,
+   "capacity_s": 1.5541008906438947e-05,
+   "interval_s": 7.120899681467563e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011086",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0081461660010973,
+   "capacity_s": 1.8417005776427686e-05,
+   "interval_s": 7.633300265297294e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011094",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006845459007308818,
+   "capacity_s": 2.0417006453499198e-05,
+   "interval_s": 8.491698827128857e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011182",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006470334003097378,
+   "capacity_s": 1.529201108496636e-05,
+   "interval_s": 7.287500193342566e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011190",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006454999995185062,
+   "capacity_s": 2.1083003957755864e-05,
+   "interval_s": 8.062500273808837e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011198",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006728042004397139,
+   "capacity_s": 1.679100387264043e-05,
+   "interval_s": 7.433300197590142e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011286",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006958250000025146,
+   "capacity_s": 1.3666998711414635e-05,
+   "interval_s": 6.883300375193357e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011294",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006787334001273848,
+   "capacity_s": 1.5375000657513738e-05,
+   "interval_s": 7.337500574067235e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011382",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00662816601106897,
+   "capacity_s": 1.4416989870369434e-05,
+   "interval_s": 7.049999840091914e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011390",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006203375000040978,
+   "capacity_s": 1.3625001884065568e-05,
+   "interval_s": 7.095800538081676e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011398",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0068104590027360246,
+   "capacity_s": 2.0209001377224922e-05,
+   "interval_s": 8.095799421425909e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011486",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006733208007062785,
+   "capacity_s": 1.7917001969181e-05,
+   "interval_s": 7.795900455676019e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011494",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00686199999472592,
+   "capacity_s": 1.8042002920992672e-05,
+   "interval_s": 8.337499457411468e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011582",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00665283300622832,
+   "capacity_s": 2.1709012798964977e-05,
+   "interval_s": 8.333299774676561e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011590",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00619733399071265,
+   "capacity_s": 1.5666999388486147e-05,
+   "interval_s": 7.404199277516454e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011598",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006420082994736731,
+   "capacity_s": 1.3540993677452207e-05,
+   "interval_s": 7.079199713189155e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011686",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0069652919919462875,
+   "capacity_s": 1.966700074262917e-05,
+   "interval_s": 9.012500231619924e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011694",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.007024375008768402,
+   "capacity_s": 2.3917004000395536e-05,
+   "interval_s": 8.625000191386789e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011782",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006696500000543892,
+   "capacity_s": 1.4874996850267053e-05,
+   "interval_s": 7.287498738151044e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011790",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0062150420126272365,
+   "capacity_s": 1.345800410490483e-05,
+   "interval_s": 6.987499364186078e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011798",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006937416997971013,
+   "capacity_s": 1.3500000932253897e-05,
+   "interval_s": 6.954198761377484e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011886",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006412124988855794,
+   "capacity_s": 1.3291995855979621e-05,
+   "interval_s": 6.833400402683765e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011894",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.00882729199656751,
+   "capacity_s": 1.6833000699989498e-05,
+   "interval_s": 7.60830007493496e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011982",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.0074798330024350435,
+   "capacity_s": 1.550000160932541e-05,
+   "interval_s": 7.133299368433654e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011990",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006519167000078596,
+   "capacity_s": 1.837500894907862e-05,
+   "interval_s": 7.866699888836592e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  },
+  {
+   "id": "synthetic-0011998",
+   "status": "INFEASIBLE",
+   "cpsat_s": 0.006538500005262904,
+   "capacity_s": 1.8582999473437667e-05,
+   "interval_s": 8.29579948913306e-05,
+   "core": [
+    "queue/0/1/0"
+   ],
+   "capacity_core": "queue/0/1/0",
+   "interval_core": "queue/0/1/0"
+  }
+ ]
+}

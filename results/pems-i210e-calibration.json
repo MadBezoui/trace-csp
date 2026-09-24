@@ -1,0 +1,386 @@
+{
+ "calibration_dates": "2026 Jan+Apr weekdays",
+ "validation_dates": "2026 May+Aug weekdays",
+ "min_pct_observed": 75,
+ "postmile_to_sumo": {
+  "slope_m_per_mile": 1546.16733768001,
+  "intercept_m": -38487.269450521555
+ },
+ "corridor_median": {
+  "free_speed_kmh": 107.9869824,
+  "capacity_vphpl": 1609.2,
+  "wave_speed_kmh": 18.166681620352733,
+  "jam_density_vpkmpl": 100.6700417892807,
+  "effective_length_m": 9.810870487417326
+ },
+ "cells": [
+  {
+   "cell": 0,
+   "stations": [
+    717646
+   ],
+   "free_speed_kmh": 109.9181952,
+   "capacity_vphpl": 1533.6,
+   "wave_speed_kmh": 16.240566450755217,
+   "jam_density_vpkmpl": 104.51616919838683,
+   "effective_length_m": 11.625191797014926
+  },
+  {
+   "cell": 1,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 2,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 3,
+   "stations": [
+    717650
+   ],
+   "free_speed_kmh": 113.29781760000002,
+   "capacity_vphpl": 1416.0,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 95.9885263293772,
+   "effective_length_m": 9.736278158490563
+  },
+  {
+   "cell": 4,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 5,
+   "stations": [
+    717654
+   ],
+   "free_speed_kmh": 107.3432448,
+   "capacity_vphpl": 1677.0,
+   "wave_speed_kmh": 26.649468396162906,
+   "jam_density_vpkmpl": 74.18303555440187,
+   "effective_length_m": 9.677181261176472
+  },
+  {
+   "cell": 6,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 7,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 8,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 9,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 10,
+   "stations": [
+    717672
+   ],
+   "free_speed_kmh": 108.3088512,
+   "capacity_vphpl": 1743.0,
+   "wave_speed_kmh": 24.753735366823996,
+   "jam_density_vpkmpl": 83.59421862633997,
+   "effective_length_m": 9.59194511892425
+  },
+  {
+   "cell": 11,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 12,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 13,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 14,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 15,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 16,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 17,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 18,
+   "stations": [
+    761165
+   ],
+   "free_speed_kmh": 101.0668032,
+   "capacity_vphpl": 1608.0,
+   "wave_speed_kmh": 20.11676328113024,
+   "jam_density_vpkmpl": 97.23860231627089,
+   "effective_length_m": 10.792371652173914
+  },
+  {
+   "cell": 19,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 20,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 21,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  },
+  {
+   "cell": 22,
+   "stations": [
+    761191
+   ],
+   "free_speed_kmh": 110.4009984,
+   "capacity_vphpl": 1521.0,
+   "wave_speed_kmh": 20.477391432126712,
+   "jam_density_vpkmpl": 88.33139788165082,
+   "effective_length_m": 10.068050787462296
+  },
+  {
+   "cell": 23,
+   "stations": [
+    769772
+   ],
+   "free_speed_kmh": 106.3776384,
+   "capacity_vphpl": 1407.0,
+   "wave_speed_kmh": 4.899142386236558,
+   "jam_density_vpkmpl": 293.8481864940709,
+   "effective_length_m": 7.95527406526984
+  },
+  {
+   "cell": 24,
+   "stations": [],
+   "free_speed_kmh": 107.9869824,
+   "capacity_vphpl": 1609.2,
+   "wave_speed_kmh": 18.166681620352733,
+   "jam_density_vpkmpl": 100.6700417892807,
+   "effective_length_m": 9.810870487417326
+  }
+ ],
+ "validation_flow_error": {
+  "calibrated": {
+   "rmse_vphpl": 144.5828705769559,
+   "bias_vphpl": -68.89109308681905
+  },
+  "placeholder": {
+   "rmse_vphpl": 318.2603950278066,
+   "bias_vphpl": -5.150747933481947
+  },
+  "corridor_median": {
+   "rmse_vphpl": 152.18719804908076,
+   "bias_vphpl": -69.79777523864365
+  }
+ },
+ "validation_by_station": [
+  {
+   "station": 717638,
+   "n": 5431,
+   "calibrated_rmse_vphpl": 70.37199817988052,
+   "corridor_median_rmse_vphpl": 104.56941571543202,
+   "placeholder_rmse_vphpl": 260.1448455479542
+  },
+  {
+   "station": 717640,
+   "n": 5431,
+   "calibrated_rmse_vphpl": 116.93080683778467,
+   "corridor_median_rmse_vphpl": 129.8155818156549,
+   "placeholder_rmse_vphpl": 235.28743203345763
+  },
+  {
+   "station": 717646,
+   "n": 5431,
+   "calibrated_rmse_vphpl": 214.92377924742024,
+   "corridor_median_rmse_vphpl": 229.5359823121357,
+   "placeholder_rmse_vphpl": 358.26213480973274
+  },
+  {
+   "station": 717650,
+   "n": 5431,
+   "calibrated_rmse_vphpl": 135.37192388023232,
+   "corridor_median_rmse_vphpl": 168.21747204657927,
+   "placeholder_rmse_vphpl": 393.59355420999555
+  },
+  {
+   "station": 717654,
+   "n": 5430,
+   "calibrated_rmse_vphpl": 179.90133847817077,
+   "corridor_median_rmse_vphpl": 181.0820551209141,
+   "placeholder_rmse_vphpl": 384.3294711693304
+  },
+  {
+   "station": 717672,
+   "n": 3855,
+   "calibrated_rmse_vphpl": 220.445319399553,
+   "corridor_median_rmse_vphpl": 221.40118250670767,
+   "placeholder_rmse_vphpl": 358.33208883135694
+  },
+  {
+   "station": 717684,
+   "n": 1439,
+   "calibrated_rmse_vphpl": 91.45515192648298,
+   "corridor_median_rmse_vphpl": 129.06851908331197,
+   "placeholder_rmse_vphpl": 302.98538712484117
+  },
+  {
+   "station": 718469,
+   "n": 5006,
+   "calibrated_rmse_vphpl": 119.82788315366338,
+   "corridor_median_rmse_vphpl": 112.64460092072416,
+   "placeholder_rmse_vphpl": 206.1089656002895
+  },
+  {
+   "station": 761165,
+   "n": 4567,
+   "calibrated_rmse_vphpl": 187.0533798217633,
+   "corridor_median_rmse_vphpl": 151.57784852979415,
+   "placeholder_rmse_vphpl": 379.3756519751706
+  },
+  {
+   "station": 761191,
+   "n": 3992,
+   "calibrated_rmse_vphpl": 127.5163538869857,
+   "corridor_median_rmse_vphpl": 148.46596857502533,
+   "placeholder_rmse_vphpl": 398.7878861948711
+  },
+  {
+   "station": 761206,
+   "n": 5431,
+   "calibrated_rmse_vphpl": 92.15652776527293,
+   "corridor_median_rmse_vphpl": 80.75269330151725,
+   "placeholder_rmse_vphpl": 283.8712116877587
+  },
+  {
+   "station": 761220,
+   "n": 5005,
+   "calibrated_rmse_vphpl": 166.7592272849764,
+   "corridor_median_rmse_vphpl": 159.72806541269756,
+   "placeholder_rmse_vphpl": 344.2593239816271
+  },
+  {
+   "station": 765477,
+   "n": 5006,
+   "calibrated_rmse_vphpl": 141.7062442228774,
+   "corridor_median_rmse_vphpl": 141.15549986958948,
+   "placeholder_rmse_vphpl": 346.1931146457794
+  },
+  {
+   "station": 769772,
+   "n": 5142,
+   "calibrated_rmse_vphpl": 103.02735753962898,
+   "corridor_median_rmse_vphpl": 143.96200844199907,
+   "placeholder_rmse_vphpl": 278.72281264038565
+  },
+  {
+   "station": 772903,
+   "n": 4430,
+   "calibrated_rmse_vphpl": 81.4759832499137,
+   "corridor_median_rmse_vphpl": 96.81446925713365,
+   "placeholder_rmse_vphpl": 260.0127768723277
+  },
+  {
+   "station": 772917,
+   "n": 5006,
+   "calibrated_rmse_vphpl": 138.72809018554892,
+   "corridor_median_rmse_vphpl": 149.49928004209852,
+   "placeholder_rmse_vphpl": 214.8188978214511
+  }
+ ],
+ "validation_samples": 76033
+}

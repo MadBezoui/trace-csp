@@ -1,0 +1,7 @@
+horizon: 2
+dt_s: 10
+time_limit_s: 1.0
+workers: 1
+seed: 0
+alpha_percent: 90
+fairness: true

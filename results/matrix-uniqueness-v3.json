@@ -1,0 +1,29 @@
+{
+  "scope": "synthetic 12-period forcing traces, not observed traffic outcomes",
+  "families": [
+    "normal",
+    "mild_incident",
+    "severe_incident",
+    "sensor_fault",
+    "demand_shift",
+    "communication_fault",
+    "compound",
+    "structural_ood"
+  ],
+  "incident_levels": [
+    1000,
+    800,
+    500
+  ],
+  "demand_levels": [
+    0.7,
+    1.0,
+    1.4
+  ],
+  "seeds": 30,
+  "periods": 12,
+  "matched_seed_demand_settings": 90,
+  "conditions_per_setting": 24,
+  "max_duplicate_conditions_per_setting": 0,
+  "config_sha256": "595ba1d284eb074ab66b9358742c560a55a046509048111dc34a7a9653305040"
+}

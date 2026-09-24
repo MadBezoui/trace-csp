@@ -1,0 +1,8 @@
+architecture: hgt
+hidden: 32
+heads: 2
+layers: 2
+epochs: 2
+learning_rate: 0.001
+training_seeds: [0, 1, 2, 3, 4]
+calibration_split: validation
