@@ -1,6 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the article in preferred-citation."
+message: "If you use this software or data, please cite it using these metadata."
+type: software
 title: "TRACE-CSP: certified infeasibility diagnosis and a runtime-assurance shield for freeway ramp metering"
+repository-code: "https://github.com/MadBezoui/trace-csp"
 authors:
   - family-names: Ouali
     given-names: Lillia
@@ -18,25 +20,6 @@ authors:
     given-names: Ahcene
     affiliation: "University of Sharjah, Sharjah, United Arab Emirates"
     email: abounceur@sharjah.ac.ae
-contact:
-  - family-names: Ouali
-    given-names: Lillia
-    email: lillia.ouali@univ-bejaia.dz
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-09-24"
 license: MIT
-preferred-citation:
-  type: article
-  title: "Certified Infeasibility Diagnosis and Graceful Degradation for Freeway Ramp Metering: A Constraint-Programming Runtime-Assurance Shield"
-  authors:
-    - family-names: Ouali
-      given-names: Lillia
-    - family-names: Bezoui
-      given-names: Madani
-    - family-names: Amroun
-      given-names: Kamal
-    - family-names: Bounceur
-      given-names: Ahcene
-  journal: "IEEE Transactions on Intelligent Transportation Systems"
-  status: submitted
-  year: 2026

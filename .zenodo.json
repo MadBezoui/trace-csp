@@ -1,6 +1,7 @@
 {
   "title": "TRACE-CSP: experimental code and results for certified infeasibility diagnosis and a runtime-assurance shield for freeway ramp metering",
   "upload_type": "software",
+  "description": "Experimental code and result data to reproduce the experiments of the article 'Certified Infeasibility Diagnosis and Graceful Degradation for Freeway Ramp Metering: A Constraint-Programming Runtime-Assurance Shield' (L. Ouali, M. Bezoui, K. Amroun, A. Bounceur). Includes the integer cell transmission model, the CP-SAT controller, the exact verifier, the interval-reachability certificates, the runtime-assurance shield, the closed-loop harness for the NCHRP I-210 SUMO benchmark, the PeMS calibration pipeline, the synthetic datasets and every result file. Not included: raw Caltrans PeMS data (registration required) and the public I-210 benchmark (revision eb8bbf2, to be downloaded separately).",
   "creators": [
     {
       "name": "Ouali, Lillia",
@@ -19,7 +20,7 @@
       "affiliation": "University of Sharjah, Sharjah, United Arab Emirates"
     }
   ],
-  "description": "Experimental code and result data to reproduce the experiments of the article 'Certified Infeasibility Diagnosis and Graceful Degradation for Freeway Ramp Metering: A Constraint-Programming Runtime-Assurance Shield' (L. Ouali, M. Bezoui, K. Amroun, A. Bounceur). Includes the integer cell transmission model, the CP-SAT controller, the exact verifier, the interval-reachability certificates, the runtime-assurance shield, the closed-loop harness for the NCHRP I-210 SUMO benchmark, the PeMS calibration pipeline, the synthetic datasets and every result file. Not included: raw Caltrans PeMS data (registration required) and the public I-210 benchmark (revision eb8bbf2, to be downloaded separately).",
+  "license": "MIT",
   "keywords": [
     "ramp metering",
     "freeway traffic control",
@@ -30,8 +31,5 @@
     "cell transmission model",
     "SUMO",
     "PeMS"
-  ],
-  "license": "mit",
-  "version": "1.0.0",
-  "access_right": "open"
+  ]
 }
