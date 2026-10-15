@@ -25,6 +25,8 @@ class SolveResult:
     trace: list[dict] = field(default_factory=list)
     audit: dict = field(default_factory=dict)
     max_queue_excess: int | None = None
+    # One record per lexicographic stage: proof status, incumbent value and best bound.
+    stages: list[dict] = field(default_factory=list)
 
 
 class Trace(cp_model.CpSolverSolutionCallback):
@@ -45,10 +47,13 @@ def solve(instance,hints=None,priorities=None,fixed=None,relax=None,soft_weight=
     for stage,obj in built.objectives:
         remaining=cfg.time_limit_s-(perf_counter()-start)
         if remaining<=0:
-            all_optimal=False; break
+            all_optimal=False; result.stages.append({'stage':stage,'status':'NOT_STARTED'}); break
         built.model.minimize(obj); solver.parameters.max_time_in_seconds=remaining
         status=solver.solve(built.model,Trace(start,stage,result.trace))
         result.branches+=solver.num_branches; result.conflicts+=solver.num_conflicts
+        record={'stage':stage,'status':solver.status_name(status),'elapsed_s':perf_counter()-start}
+        if status in (cp_model.OPTIMAL,cp_model.FEASIBLE): record.update(objective=solver.objective_value,bound=solver.best_objective_bound)
+        result.stages.append(record)
         if status not in (cp_model.OPTIMAL,cp_model.FEASIBLE):
             all_optimal=False
             if result.actions is None:

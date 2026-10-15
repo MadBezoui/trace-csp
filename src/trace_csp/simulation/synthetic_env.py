@@ -36,7 +36,7 @@ def run_episode(seed,controller='cp_sat',periods=12,family=None,demand_multiplie
     state=first.state; initial=sum(state.vehicles)+sum(state.queues)+state.boundary_queue
     mode={'degraded_cp_sat':'degrade','soft_mpc':'soft'}.get(controller,'hard')
     optimiser=Controller(reuse=controller not in ('cp_sat','degraded_cp_sat'),predictor=predictor if controller=='learned_cp_sat' else None,mode=mode,soft_weight=soft_weight)
-    excess_total=0; excess_max=0; total_time=0; exited=0; arriving=0; completed=0; fallback=0; maxqueue=0; waiting=[0]*len(first.corridor.ramp_max)
+    excess_total=0; excess_max=0; violations=0; total_time=0; exited=0; arriving=0; completed=0; fallback=0; maxqueue=0; waiting=[0]*len(first.corridor.ramp_max)
     halt_reason=None; halt_elapsed_s=None; records=[]
     for t in range(periods):
         period_factor=period_incident_factor(first.family,incident_factor,t)
@@ -73,7 +73,7 @@ def run_episode(seed,controller='cp_sat',periods=12,family=None,demand_multiplie
         total_time+=(sum(state.vehicles)+sum(state.queues)+state.boundary_queue)*i.config.dt_s
         maxqueue=max(maxqueue,*state.queues)
         over=[max(0,q-k) for q,k in zip(state.queues,i.corridor.queue_max)]
-        excess_total+=sum(over); excess_max=max(excess_max,*over)
+        excess_total+=sum(over); excess_max=max(excess_max,*over); violations+=any(over)
         waiting=[a+b for a,b in zip(waiting,state.queues)]
         fallback+=mode not in (controller,'trace-csp','soft-mpc',controller+'-unverified')
         records.append({'period':t,'period_incident_factor':period_factor,
@@ -87,7 +87,8 @@ def run_episode(seed,controller='cp_sat',periods=12,family=None,demand_multiplie
             'demand_multiplier':demand_multiplier,'incident_factor':incident_factor,'steps':completed,
             'requested_steps':periods,'halt_reason':halt_reason,'halt_elapsed_s':halt_elapsed_s,
             'feasible_at_deadline':sum(row['deadline_met'] for row in records),
-            'hard_violations':0,'fallback_count':fallback,
+            # Periods whose realized state exceeds a hard queue limit (ungated or relaxed actions).
+            'hard_violations':violations,'fallback_count':fallback,
             'initial_vehicles':initial,'arriving_vehicles':arriving,'final_vehicles':final,'exited_vehicles':exited,
             'total_time_spent':total_time,'queue_excess_vehicle_steps':excess_total,'max_queue_excess':excess_max,'throughput':exited,'max_queue':maxqueue,'worst_ramp_waiting':max(waiting,default=0),
             'ramp_waiting_gini':gini(waiting),'records':records}

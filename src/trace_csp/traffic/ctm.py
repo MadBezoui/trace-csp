@@ -4,7 +4,7 @@ Each sending/receiving quantity is computed from the pre-step state.
 Unadmitted upstream arrivals remain in an explicit boundary queue.
 """
 from dataclasses import dataclass
-from trace_csp.domain import Action, Corridor, State, Scenario, Config, discharge_capacity
+from trace_csp.domain import Action, Corridor, State, Scenario, Config, discharge_capacity, release_capacity
 
 
 @dataclass(frozen=True)
@@ -25,7 +25,7 @@ def step(c: Corridor, state: State, action: Action, demand: Scenario, t: int, cf
     capacity = [q*f//1000 for q,f in zip(c.capacity,demand.capacity_factor[t])]
     sending = [min(discharge_capacity(c,cfg,i,capacity[i],state.vehicles[i]),state.vehicles[i]*action.vsl[i]*cfg.dt_s*10//(36*c.length_m[i])) for i in range(n)]
     receiving = [min(capacity[i],(c.jam[i]-state.vehicles[i])*c.wave_speed_kmh*cfg.dt_s*10//(36*c.length_m[i])) for i in range(n)]
-    release = tuple(min(action.ramp[r],state.queues[r]+demand.ramps[t][r],receiving[i]) for r,i in enumerate(c.ramp_segment))
+    release = tuple(min(release_capacity(c,cfg,r,action.ramp[r],t),state.queues[r]+demand.ramps[t][r],receiving[i]) for r,i in enumerate(c.ramp_segment))
     ramp_in = dict(zip(c.ramp_segment,release))
     room = [receiving[i]-ramp_in.get(i,0) for i in range(n)]
     # FIFO diverge: the cell outflow is limited so that its continuing share fits downstream.

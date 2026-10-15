@@ -9,8 +9,10 @@ Steps (each writes one file):
 3. project I-210 eastbound stations onto the SUMO network
    -> data/interim/pems/i210e_station_edges.csv
 
-Raw inputs (not redistributed): data/raw/pems/d07_text_station_5min_*.txt and
-d07_text_meta_2023_12_22.txt. The next step is scripts/calibrate_i210.py.
+Raw inputs (not redistributed): data/raw/pems/d07_text_station_5min_*.txt for the 81
+dates of configs/data/pems_i210_dates.txt, and d07_text_meta_2023_12_22.txt. The
+extraction stops if the files present differ from that list. The next step is
+scripts/calibrate_i210.py.
 """
 import argparse
 import glob
@@ -25,6 +27,12 @@ COLUMNS=['ts','station','district','fwy','dir','type','length','samples','pct_ob
 NET='data/raw/i210/Ramp Metering/run_fewIncidents_ALINEA_benchmark/SUMO (few incidents)/SUMO (few incidents)/I210.net(zipper).xml'
 META=RAW/'d07_text_meta_2023_12_22.txt'
 LANE_DAY=RAW/'d07_text_station_5min_2026_04_14.txt'
+DATES=Path('configs/data/pems_i210_dates.txt')
+
+
+def expected_files():
+    dates=[l.strip() for l in DATES.read_text().splitlines() if l.strip() and not l.startswith('#')]
+    return sorted(str(RAW/f"d07_text_station_5min_{d.replace('-','_')}.txt") for d in dates)
 
 
 def extract_file(path):
@@ -41,6 +49,9 @@ def extract_file(path):
 
 def extract(workers):
     files=sorted(glob.glob(str(RAW/'d07_text_station_5min_*.txt')))
+    expected=expected_files()
+    if files!=expected:
+        raise SystemExit(f'PeMS files differ from {DATES}: missing {sorted(set(expected)-set(files))}, unexpected {sorted(set(files)-set(expected))}')
     with Pool(workers) as p: parts=p.map(extract_file,files)
     df=pd.concat(parts,ignore_index=True); df['ts']=pd.to_datetime(df.ts,format='%m/%d/%Y %H:%M:%S')
     df['date']=df.ts.dt.date; df['tod']=df.ts.dt.time

@@ -3,7 +3,7 @@ access: registered Caltrans PeMS account (raw data not redistributed)
 district: 7
 corridor: I-210 eastbound
 station_metadata: d07_text_meta_2023_12_22.txt
-days: 81 days of 5-minute station data in January, April, May and August 2026
+days: 81 days of 5-minute station data in January, April, May and August 2026 (exact list in configs/data/pems_i210_dates.txt)
 min_percent_observed: 75
 calibration_dates: January and April 2026 weekdays
 validation_dates: May and August 2026 weekdays

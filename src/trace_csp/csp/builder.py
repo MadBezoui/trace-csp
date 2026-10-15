@@ -56,7 +56,22 @@ def build(instance: Instance, hints=None, priorities=None, fixed=None, relax=Non
             if j:
                 linear(x-vs[j-1]<=cfg.spatial_dv,f'spatial_upper/{t}/{j}')
                 linear(vs[j-1]-x<=cfg.spatial_dv,f'spatial_lower/{t}/{j}')
+        if t%cfg.control_block:
+            # A command is held over its whole actuation period.
+            for j,x in enumerate(ms): linear(x==ramps[t-1][j],f'ramp_block/{t}/{j}')
+            for j,x in enumerate(vs): linear(x==vsls[t-1][j],f'vsl_block/{t}/{j}')
         ramps.append(ms); vsls.append(vs)
+    # Release capacity of each command at each step of its period (device release table).
+    caps=[]
+    for t in range(h):
+        row=[]
+        for j,x in enumerate(ramps[t]):
+            table=c.release_table[j]
+            if not table: row.append(x); continue
+            cap=var(f'release_cap/{t}/{j}',0,max(p[t%cfg.control_block] for p in table))
+            model.add_element(x,[p[t%cfg.control_block] for p in table],cap).with_name(f'release_table/{t}/{j}')
+            row.append(cap)
+        caps.append(row)
     costs=[]; fairs=[]; all_states=[]; excess=[]
     overs=[]
     # Critical occupancy: largest n whose free-flow sending at the top speed stays within capacity.
@@ -104,8 +119,9 @@ def build(instance: Instance, hints=None, priorities=None, fixed=None, relax=Non
                 else: sends.append(minimum('send/'+prefix,[raw,cap]))
                 space=var('raw_receive/'+prefix,0,c.jam[j])
                 model.add_division_equality(space,(c.jam[j]-ns[j])*c.wave_speed_kmh*cfg.dt_s*10,36*c.length_m[j]).with_name('receiving/'+prefix)
-                receives.append(minimum('receive/'+prefix,[space,cap]))
-            release=[minimum(f'release/{wi}/{t}/{j}',[ramps[t][j],qs[j]+w.ramps[t][j],receives[cell]]) for j,cell in enumerate(c.ramp_segment)]
+                # Receiving capacity can exceed the vehicles in the system: bound it by the jam occupancy.
+                receives.append(minimum('receive/'+prefix,[space,cap],hi=c.jam[j]))
+            release=[minimum(f'release/{wi}/{t}/{j}',[caps[t][j],qs[j]+w.ramps[t][j],receives[cell]]) for j,cell in enumerate(c.ramp_segment)]
             rin=dict(zip(c.ramp_segment,release))
             flows=[]; through=[]
             for j in range(n):

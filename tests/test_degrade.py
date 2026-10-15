@@ -17,7 +17,7 @@ def test_degraded_controller_acts_on_certified_infeasibility_and_reports_excess(
     assert Controller().act(i).action is None
     d=Controller(mode='degrade').act(i)
     assert d.mode=='degraded' and d.audit['certified_core'] and d.audit['planned_max_queue_excess']>0
-    assert verify(i,d.action,queue_slack=d.audit['max_queue_excess_first_step']).safe
+    assert verify(i,d.action,queue_slack=d.audit['max_queue_excess_first_period']).safe
 
 
 def test_degraded_controller_matches_hard_controller_when_feasible():
@@ -27,4 +27,4 @@ def test_degraded_controller_matches_hard_controller_when_feasible():
 
 def test_soft_mpc_returns_verified_action_with_reported_excess():
     d=Controller(mode='soft').act(generate_instance(6,family='compound'))
-    assert d.mode=='soft-mpc' and d.audit['max_queue_excess_first_step']>=0
+    assert d.mode=='soft-mpc' and d.audit['max_queue_excess_first_period']>=0

@@ -71,7 +71,9 @@ def generate_instance(seed:int,horizon=2,family=None,demand_multiplier=1.0,incid
 
 
 def instance_from_dict(d):
-    c=Corridor(**{k:tuple(v) if isinstance(v,list) else v for k,v in d['corridor'].items()})
+    corridor=dict(d['corridor'])
+    if 'release_table' in corridor: corridor['release_table']=tuple(tuple(tuple(p) for p in table) for table in corridor['release_table'])
+    c=Corridor(**{k:tuple(v) if isinstance(v,list) else v for k,v in corridor.items()})
     s=d['state']; a=Action(tuple(s['previous']['ramp']),tuple(s['previous']['vsl']))
     state=State(tuple(s['vehicles']),tuple(s['queues']),s['boundary_queue'],a)
     ws=tuple(Scenario(w['weight'],tuple(w['mainline']),tuple(map(tuple,w['ramps'])),tuple(map(tuple,w['capacity_factor']))) for w in d['scenarios'])

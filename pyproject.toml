@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "trace-csp"
-version = "0.1.0"
+version = "1.1.0"
 description = "Certified infeasibility diagnosis and a runtime-assurance shield for freeway ramp metering"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -12,7 +12,8 @@ dependencies = ["numpy>=1.26,<2", "ortools>=9.14,<9.15", "scipy>=1.11,<2", "PyYA
 
 [project.optional-dependencies]
 learning = ["torch>=2.0,<3", "torch-geometric>=2.5,<3"]
-sumo = ["eclipse-sumo==1.27.1", "traci==1.27.1"]
+sumo = ["eclipse-sumo==1.27.1", "sumo-data==1.27.1", "sumolib==1.27.1", "traci==1.27.1"]
+calibration = ["pandas>=2.1,<4", "pyarrow>=14"]
 dev = ["pytest>=8,<9", "matplotlib>=3.8,<4"]
 
 [project.scripts]

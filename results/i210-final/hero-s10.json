@@ -17,10 +17,18 @@
  "network_vehicle_seconds": 62578750,
  "insertion_backlog_vehicle_seconds": 8768635,
  "vehicles_in_network_end": 1033,
+ "pending_vehicles_end": 60,
  "ramp_vehicle_seconds": 3397178,
  "ramp_approach_vehicle_seconds": 475375,
+ "ramp_approach_halting_vehicle_seconds": 10649,
+ "controller_queue_excess_vehicle_seconds": 833,
+ "actuation": "commands held 30 s; meter command = green phases per period",
+ "control_period_s": 30,
  "storage_fraction": 0.8,
  "capacity_drop_permille": 0,
+ "approach_count": "all",
+ "reference_weighting": "uniform",
+ "max_rate_change": null,
  "ramp_excess_by_ramp": {
   "Onramp5": 0,
   "Onramp6": 0,
@@ -41,6 +49,47 @@
  "modes": {},
  "median_decision_s": null,
  "max_decision_s": null,
+ "model": null,
+ "provenance": {
+  "trace_csp_version": "1.1.0",
+  "package_sha256": "27a7b07ca72786ffdc40e57ff8cc5be8116056077fbb6a76ac02ae767b8b4232",
+  "python": "3.11.7",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "packages": {
+   "ortools": "9.14.6206",
+   "numpy": "1.26.4",
+   "eclipse-sumo": "1.27.1",
+   "traci": "1.27.1",
+   "sumolib": "1.27.1"
+  },
+  "inputs": {
+   "data/raw/i210/Ramp Metering/run_fewIncidents_ALINEA_benchmark/freewayControl.py": "44ec506119e81de6cc7ae8fc34b174701eee4236c7c88c17dd223afe0a2149e4",
+   "data/raw/i210/Ramp Metering/run_fewIncidents_ALINEA_benchmark/meterConfig.json": "0b0511c55466711451ac8533c2058a24898a459720f7ad4423875efcd20a656c",
+   "data/raw/i210/Ramp Metering/run_fewIncidents_ALINEA_benchmark/SUMO (few incidents)/SUMO (few incidents)/I210.sumocfg.xml": "d604f10429f223efb136dd938f422fa59e07f1448a948d1a839341b488441122"
+  },
+  "argv": [
+   "scripts/run_i210_trace.py",
+   "--mode",
+   "hero",
+   "--seed",
+   "10",
+   "--seconds",
+   "25200",
+   "--output",
+   "results/i210-final/hero-s10.json"
+  ],
+  "cpu_count": 10,
+  "load_average_start": [
+   32.90087890625,
+   50.96044921875,
+   52.470703125
+  ],
+  "load_average_end": [
+   5.240234375,
+   6.564453125,
+   18.46142578125
+  ]
+ },
  "decisions": [],
  "series": [
   {

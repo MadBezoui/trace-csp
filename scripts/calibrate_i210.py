@@ -53,12 +53,17 @@ def main():
     df=df[(df.type=='ML')&(df.dir=='E')&(df.pct_obs>=75)&df.station.isin(corridor_fits.station)]
     d=pd.to_datetime(df.date); df=df[(d.dt.dayofweek<5)&d.dt.month.isin([5,8])]
     lanes=dict(zip(meta.ID,meta.Lanes))
+    # The fit normalized flow by the lanes reporting flow on 2026-04-14; validation uses the
+    # metadata lane count. Stop if the two disagree for a validated station.
+    fitted_lanes=dict(zip(corridor_fits.station,corridor_fits.lanes))
+    disagree={int(st):(int(fitted_lanes[st]),int(lanes[st])) for st in df.station.unique() if fitted_lanes[st]!=lanes[st]}
+    if disagree: raise SystemExit(f'lane counts differ between fit and metadata (fit, metadata): {disagree}')
     placeholder={'free_speed_kmh':100.,'capacity_vphpl':1980.,'wave_speed_kmh':16.,'jam_density_vpkmpl':150.}
     errors={'calibrated':[],'placeholder':[],'corridor_median':[]}; per_station=[]
     for st,g in df.groupby('station'):
         p=corridor_fits[corridor_fits.station==st].iloc[0].to_dict()
         q=g.flow.to_numpy()*12/lanes[st]; k=g.occ.to_numpy()/(p['effective_length_m']/1000)
-        row={'station':int(st),'n':len(g)}
+        row={'station':int(st),'n':len(g),'lanes':int(lanes[st])}
         for name,params in (('calibrated',p),('corridor_median',overall),('placeholder',placeholder)):
             err=triangular(k,params)-q; errors[name].append(err); row[name+'_rmse_vphpl']=float(np.sqrt(np.mean(err**2)))
         per_station.append(row)

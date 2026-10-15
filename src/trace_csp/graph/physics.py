@@ -5,6 +5,23 @@ and q + d - min(M, q + d, R) is nondecreasing in q. Propagating that bound gives
 sound (not complete) proof that one queue guard alone is an infeasibility core.
 """
 from trace_csp.graph.labels import candidate_values
+from trace_csp.domain import release_capacity
+
+
+def command_range(instance,j,t):
+    """Metering commands reachable at step t under smoothness; commands change only at
+    the start of an actuation period, so at most t//control_block+1 changes occur."""
+    c,s,cfg=instance.corridor,instance.state,instance.config
+    changes=t//cfg.control_block+1; p=s.previous.ramp[j]
+    return max(c.ramp_min[j],p-cfg.max_dm*changes),min(c.ramp_max[j],p+cfg.max_dm*changes)
+
+
+def release_range(instance,j,t):
+    """Smallest and largest release capacity over the reachable commands at step t."""
+    lo,hi=command_range(instance,j,t); c,cfg=instance.corridor,instance.config
+    if not c.release_table[j]: return lo,hi
+    values=[release_capacity(c,cfg,j,u,t) for u in range(lo,hi+1)]
+    return min(values),max(values)
 
 
 def queue_lower_bounds(instance):
@@ -16,7 +33,7 @@ def queue_lower_bounds(instance):
         for j in range(len(q)): bounds[f'q/{wi}/0/{j}']=q[j]
         for t in range(cfg.horizon):
             for j,cell in enumerate(c.ramp_segment):
-                reachable=min(c.ramp_max[j],s.previous.ramp[j]+cfg.max_dm*(t+1))
+                reachable=release_range(instance,j,t)[1]
                 receive=c.capacity[cell]*w.capacity_factor[t][cell]//1000
                 arrivals=q[j]+w.ramps[t][j]
                 q[j]=arrivals-min(reachable,arrivals,receive)
@@ -68,7 +85,8 @@ def interval_reach(instance,joint_merge=False):
     """Sound interval over-approximation of every reachable CTM state.
 
     Controls range over values reachable under ramp and speed smoothness
-    (spatial consistency is dropped, which only enlarges the set). Each map is
+    (spatial consistency is dropped, which only enlarges the set); a ramp's release
+    capacity ranges over the device release table of those commands. Each map is
     evaluated at the interval endpoints where it is monotone:
     S rises with (n, v), R falls with n, r = min(q+d, u, R) rises with all,
     f = min(S_up, R - r), q' = max(0, q+d-min(u, R)), z' = max(0, z+b-(R_1-r_1)).
@@ -93,8 +111,9 @@ def interval_reach(instance,joint_merge=False):
         record(0)
         for t in range(cfg.horizon):
             cap=[k*f//1000 for k,f in zip(c.capacity,w.capacity_factor[t])]
-            u=[(max(lo,p-cfg.max_dm*(t+1)),min(m,p+cfg.max_dm*(t+1))) for p,lo,m in zip(s.previous.ramp,c.ramp_min,c.ramp_max)]
-            v=[(max(speeds[0],p-cfg.max_dv*(t+1)),min(speeds[-1],p+cfg.max_dv*(t+1))) for p in s.previous.vsl]
+            u=[release_range(instance,j,t) for j in range(len(c.ramp_segment))]
+            changes=t//cfg.control_block+1
+            v=[(max(speeds[0],p-cfg.max_dv*changes),min(speeds[-1],p+cfg.max_dv*changes)) for p in s.previous.vsl]
             v=[(min(x for x in speeds if x>=lo),max(x for x in speeds if x<=hi)) for lo,hi in v]
             S=[(send(n[j][0],v[j][0],j,cap_range(j,*n[j])[0]),send(n[j][1],v[j][1],j,cap_range(j,*n[j])[1])) for j in range(n_cells)]
             R=[(recv(n[j][1],j),recv(n[j][0],j)) for j in range(n_cells)]

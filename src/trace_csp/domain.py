@@ -32,6 +32,10 @@ class Corridor:
     # Capacity drop: above its critical occupancy a cell discharges at most
     # capacity*(1000-capacity_drop_permille)//1000 (0 = triangular CTM).
     capacity_drop_permille: int = 0
+    # Device release table per ramp: () means a command u releases at most u vehicles in
+    # every step; otherwise entry [u][k] is the release capacity of command u at step k of
+    # its actuation period (Config.control_block steps), e.g. green phases of a meter.
+    release_table: tuple[tuple[tuple[int, ...], ...], ...] = ()
 
     def __post_init__(self):
         n, r = len(self.jam), len(self.ramp_segment)
@@ -53,6 +57,11 @@ class Corridor:
         if len(self.ramp_min)!=r or not integers(self.ramp_min) or any(a>b for a,b in zip(self.ramp_min,self.ramp_max)):
             raise ValueError('invalid minimum ramp rates')
         if not integers((self.capacity_drop_permille,)) or self.capacity_drop_permille>=1000: raise ValueError('invalid capacity drop')
+        if not self.release_table: object.__setattr__(self,'release_table',((),)*r)
+        if len(self.release_table)!=r: raise ValueError('one release table entry per ramp required')
+        for table,top in zip(self.release_table,self.ramp_max):
+            if table and (len(table)!=top+1 or len({len(row) for row in table})!=1 or not all(integers(row) for row in table)):
+                raise ValueError('release table must give one nonnegative pattern per command 0..ramp_max')
 
 
 @dataclass(frozen=True)
@@ -88,9 +97,13 @@ class Config:
     # Surrogate for capacity drop (not represented by the triangular CTM): penalize
     # vehicles above each cell's critical occupancy, before TTS in the lexicographic order.
     congestion_penalty: bool = False
+    # Steps per actuation period: commands may change only every control_block steps,
+    # and an issued command is held, and verified, over a whole period.
+    control_block: int = 1
 
     def __post_init__(self):
-        if not integers((self.horizon,self.dt_s,self.workers),1): raise ValueError('positive configuration required')
+        if not integers((self.horizon,self.dt_s,self.workers,self.control_block),1): raise ValueError('positive configuration required')
+        if self.horizon%self.control_block: raise ValueError('horizon must be a multiple of the control block')
         if not self.vsl_values or not integers(self.vsl_values,1) or len(set(self.vsl_values)) != len(self.vsl_values):
             raise ValueError('invalid speed domain')
         if not integers((self.max_dv,self.max_dm,self.spatial_dv,self.seed,self.alpha_percent)) or self.alpha_percent >= 100:
@@ -124,6 +137,8 @@ class Instance:
             raise ValueError('invalid previous action')
         if any(max(max(cfg.vsl_values),c.wave_speed_kmh)*cfg.dt_s*10 > 36*l for l in c.length_m):
             raise ValueError('CFL condition violated: speed * dt must not exceed cell length')
+        if any(table and len(table[0])!=cfg.control_block for table in c.release_table):
+            raise ValueError('release patterns must span one control block')
         if not self.scenarios: raise ValueError('at least one uncertainty scenario required')
         for w in self.scenarios:
             if not integers((w.weight,),1) or len(w.mainline)!=h or len(w.ramps)!=h or len(w.capacity_factor)!=h:
@@ -137,6 +152,12 @@ class Instance:
 def critical_occupancy(c,cfg,j):
     """Largest occupancy whose free-flow sending at the top speed stays within nominal capacity."""
     return c.capacity[j]*36*c.length_m[j]//(max(cfg.vsl_values)*cfg.dt_s*10)
+
+
+def release_capacity(c,cfg,r,command,t):
+    """Largest release of ramp r at plan step t under a metering command."""
+    table=c.release_table[r]
+    return table[command][t%cfg.control_block] if table else command
 
 
 def discharge_capacity(c,cfg,j,cap,n):

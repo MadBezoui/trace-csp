@@ -5,4 +5,5 @@ dependencies:
   - python=3.11
   - pip
   - pip:
-      - -e .[learning,sumo,dev]
+      - -r requirements-lock.txt
+      - -e .[learning,sumo,calibration,dev]

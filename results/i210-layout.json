@@ -1,0 +1,454 @@
+{
+ "note": "I-210 section layout extracted by trace_csp.sumo_i210.extract_layout from the NCHRP benchmark (revision eb8bbf2); stored so result summaries need no benchmark copy. section_start_m: distance from the start of S0_M to the start of the section along the mainline, the origin of corridor_m in data/interim/pems/i210e_station_positions.csv.",
+ "first_edge": "S25_M",
+ "last_edge": "S67_M",
+ "dt_s": 10,
+ "vmax_kmh": 105,
+ "min_cell_m": 292,
+ "cells": [
+  {
+   "edges": [
+    "S25_M"
+   ],
+   "length_m": 296.4,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S26_M"
+   ],
+   "length_m": 412.1,
+   "lanes": 6
+  },
+  {
+   "edges": [
+    "S27_M",
+    "S28_M"
+   ],
+   "length_m": 341.1,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S29_M"
+   ],
+   "length_m": 420.9,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S30_M",
+    "S31_M"
+   ],
+   "length_m": 397.3,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S32_M",
+    "S33_M"
+   ],
+   "length_m": 621.5,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S34_M"
+   ],
+   "length_m": 332.4,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S35_M",
+    "S36_M",
+    "S37_M"
+   ],
+   "length_m": 945.5,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S38_M",
+    "S39_M"
+   ],
+   "length_m": 464.3,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S40_M",
+    "S41_M",
+    "S42_M"
+   ],
+   "length_m": 1275.8,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S43_M",
+    "S44_M"
+   ],
+   "length_m": 480.3,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S45_M",
+    "S46_M"
+   ],
+   "length_m": 790.0,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S47_M"
+   ],
+   "length_m": 463.8,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S48_M",
+    "S49_M"
+   ],
+   "length_m": 313.6,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S50_M",
+    "S51_M"
+   ],
+   "length_m": 909.5,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S52_M",
+    "S53_M"
+   ],
+   "length_m": 1132.6,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S54_M"
+   ],
+   "length_m": 499.6,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S55_M"
+   ],
+   "length_m": 305.4,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S56_M"
+   ],
+   "length_m": 387.6,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S57_M",
+    "S58_M"
+   ],
+   "length_m": 354.4,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S59_M",
+    "S60_M",
+    "S61_M"
+   ],
+   "length_m": 828.2,
+   "lanes": 5
+  },
+  {
+   "edges": [
+    "S62_M"
+   ],
+   "length_m": 373.5,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S63_M"
+   ],
+   "length_m": 528.0,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S64_M",
+    "S65_M"
+   ],
+   "length_m": 326.4,
+   "lanes": 4
+  },
+  {
+   "edges": [
+    "S66_M",
+    "S67_M"
+   ],
+   "length_m": 301.0,
+   "lanes": 5
+  }
+ ],
+ "inflows": [
+  {
+   "cell": 1,
+   "kind": "metered",
+   "name": "Onramp5",
+   "lanes": 2,
+   "storage": 31,
+   "meter": "RM5",
+   "meter_config": {
+    "meterID": "RM5",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 4,
+   "kind": "metered",
+   "name": "Onramp6",
+   "lanes": 2,
+   "storage": 31,
+   "meter": "RM6",
+   "meter_config": {
+    "meterID": "RM6",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 5,
+   "kind": "metered",
+   "name": "Onramp7",
+   "lanes": 2,
+   "storage": 43,
+   "meter": "RM7",
+   "meter_config": {
+    "meterID": "RM7",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 7,
+   "kind": "metered",
+   "name": "Onramp8",
+   "lanes": 2,
+   "storage": 83,
+   "meter": "RM8",
+   "meter_config": {
+    "meterID": "RM8",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 8,
+   "kind": "hov_merge",
+   "name": null,
+   "lanes": null,
+   "storage": null,
+   "meter": null,
+   "meter_config": null
+  },
+  {
+   "cell": 9,
+   "kind": "metered",
+   "name": "Onramp9",
+   "lanes": 2,
+   "storage": 18,
+   "meter": "RM9",
+   "meter_config": {
+    "meterID": "RM9",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 10,
+   "kind": "hov_merge",
+   "name": null,
+   "lanes": null,
+   "storage": null,
+   "meter": null,
+   "meter_config": null
+  },
+  {
+   "cell": 11,
+   "kind": "metered",
+   "name": "Onramp10",
+   "lanes": 2,
+   "storage": 25,
+   "meter": "RM10",
+   "meter_config": {
+    "meterID": "RM10",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 13,
+   "kind": "metered",
+   "name": "Onramp11",
+   "lanes": 1,
+   "storage": 16,
+   "meter": "RM11",
+   "meter_config": {
+    "meterID": "RM11",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 14,
+   "kind": "metered",
+   "name": "Onramp12",
+   "lanes": 2,
+   "storage": 26,
+   "meter": "RM12",
+   "meter_config": {
+    "meterID": "RM12",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 15,
+   "kind": "metered",
+   "name": "Onramp13",
+   "lanes": 2,
+   "storage": 32,
+   "meter": "RM13",
+   "meter_config": {
+    "meterID": "RM13",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 18,
+   "kind": "hov_merge",
+   "name": null,
+   "lanes": null,
+   "storage": null,
+   "meter": null,
+   "meter_config": null
+  },
+  {
+   "cell": 19,
+   "kind": "metered",
+   "name": "Onramp14",
+   "lanes": 2,
+   "storage": 25,
+   "meter": "RM14",
+   "meter_config": {
+    "meterID": "RM14",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 20,
+   "kind": "metered",
+   "name": "Onramp15",
+   "lanes": 2,
+   "storage": 19,
+   "meter": "RM15",
+   "meter_config": {
+    "meterID": "RM15",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 23,
+   "kind": "metered",
+   "name": "Onramp16",
+   "lanes": 2,
+   "storage": 33,
+   "meter": "RM16",
+   "meter_config": {
+    "meterID": "RM16",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 2,
+    "numVehPerGreenPerLane": 1,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 28
+   }
+  },
+  {
+   "cell": 24,
+   "kind": "metered",
+   "name": "Onramp17",
+   "lanes": 2,
+   "storage": 127,
+   "meter": "RM17",
+   "meter_config": {
+    "meterID": "RM17",
+    "greenPhaseID": 0,
+    "redPhaseID": 1,
+    "greenPhaseLen": 8,
+    "numVehPerGreenPerLane": 3,
+    "minRedPhaseLen": 2,
+    "maxRedPhaseLen": 7
+   }
+  }
+ ],
+ "section_start_m": 5565.0
+}
