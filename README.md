@@ -98,9 +98,14 @@ S=6   # any seed
     --calibration results/pems-i210e-calibration.json --workers 2 --time-limit 6 \
     --no-congestion --storage-fraction 0.8 --approach-count halting \
     --output results/i210-final/shield-halt-f0.8-s$S.json
+# Sensor-matched baseline: ALINEA with a queue override that sees the shield's queue and limit
+.venv/bin/python scripts/run_i210_trace.py --mode override --seed $S --seconds 25200 \
+    --storage-fraction 0.8 --output results/i210-final/override-f0.8-s$S.json
 # Independent replay and verification of every logged decision (no SUMO needed)
 .venv/bin/python scripts/replay_i210_decisions.py results/i210-final/shield-halt-f0.8-s$S.json
 ```
+
+The replay rebuilds each logged decision from its recorded state, demand and exit shares and checks, with the exact verifier, that the executed command meets the queue limits over its 30-s period up to the exceedance the decision declared. It also checks the declared exceedance against the recorded solver stage, recomputes the interval certificate and compares the requested and executed commands. It exits with status 1 on any failure or missing field. It checks consistency with the recorded inputs, not the optimality of the full-horizon plans.
 
 `scripts/run_i210_experiments.sh` lists every SUMO run reported in the article with its exact options: the upstream reproduction checks, the baselines for seeds 5 to 10, the development runs on seed 5 and the frozen shield at 80% and 100% of storage on the evaluation seeds. The reported shield runs were executed three at a time on the 10-core machine.
 
@@ -123,12 +128,14 @@ The meters of the benchmark repeat a 2-s green and a variable red phase within e
 | Scalability (25 to 200 cells) | `results/final/scalability.json` | `scalability.py` |
 | PeMS fundamental diagrams and validation | `results/pems-fd-i210-calibration.csv`, `results/pems-i210e-calibration.json` | `prepare_pems_i210.py`, `calibrate_i210.py` |
 | I-210 layout and meter data used by the summaries | `results/i210-layout.json` | `trace_csp.sumo_i210.extract_layout` |
-| I-210 evaluation (seeds 6 to 10) and threshold sensitivity | `results/i210-final/{alinea,hero,shield-halt-f0.8,shield-halt-f1.0}-s*.json` | `run_i210_trace.py` |
+| I-210 evaluation (seeds 6 to 10) and threshold sensitivity | `results/i210-final/{alinea,hero,override-f0.8,shield-halt-f0.8,shield-halt-f1.0}-s*.json` | `run_i210_trace.py` |
+| Same-state analysis of the storage margin | `results/i210-final/threshold-counterfactual.json` | `analyse_threshold_counterfactual.py` |
+| Benchmark files read by the harness | `results/i210-benchmark-manifest.json` | `benchmark_manifest.py` |
 | I-210 development runs (seed 5) | `results/i210-dev/v2/` (current harness), `results/i210-dev/` and `results/i210-v1-final/dev-v1/` (release 1.0.0 harness) | `run_i210_trace.py` |
 | Upstream reproduction checks | `results/i210-alinea-seed5-full.json`, `results/i210-hero-seed5-full.json`, `results/i210-final/validation-hero-upstream-scenario-s5.json` | `run_i210_baseline.py`, `run_i210_trace.py` |
 | Every number reported in the article | `results/paper-numbers.json` | manuscript build (see below) |
 
-Each SUMO result file records the configuration, aggregate metrics (network and insertion-backlog vehicle-hours, completed trips, trip waiting time, ramp-storage excess on the lane-area detector edges and including halting vehicles on the ramp approach, approach occupancy, vehicles still waiting for insertion at the end), a 30-s time series and a provenance block (package version and source digest, package versions, SHA-256 of the calibration and benchmark files, command line, machine load). Shield runs also log every decision: the observed state, the measured demand and exit shares, the requested, reference and executed commands, the red phase set at each meter, the vehicles released in the previous period, the cause of any degraded decision and the proof status, incumbent value and bound of every lexicographic stage.
+Each SUMO result file records the configuration, aggregate metrics (network and insertion-backlog vehicle-hours, completed trips, trip waiting time, ramp-storage excess on the lane-area detector edges and including halting vehicles on the ramp approach, approach occupancy, vehicles still waiting for insertion at the end), a 30-s time series and a provenance block (package version and source digest, package versions, SHA-256 of the calibration and of the main benchmark files, command line, machine load). Runs made with release 1.2.0 or later also record the digest of `scripts/`, the git revision and a manifest of every benchmark file the harness can read. For the earlier runs, `results/i210-benchmark-manifest.json` lists those files, and `benchmark_manifest.py --check` confirms that the hashes the runs recorded match it. Shield runs also log every decision: the observed state, the measured demand and exit shares, the requested, reference and executed commands, the red phase set at each meter, the vehicles released in the previous period, the cause of any degraded decision and the proof status, incumbent value and bound of every lexicographic stage.
 
 The tables and figures of the article were generated from these files by a script that belongs to the manuscript sources, which are not distributed. Every quantity it produced is listed by name in `results/paper-numbers.json`, and the table above maps each one to its result file.
 
@@ -137,6 +144,7 @@ The tables and figures of the article were generated from these files by a scrip
 - The common harness reproduces the upstream ALINEA run and, on the upstream HERO scenario, the upstream HERO run exactly for seed 5 (identical completed trips and cumulative travel and waiting times).
 - The upstream ALINEA and HERO folders ship scenarios with different driver parameters (`tau` 1.5 s versus 1.4 s and one mainline calibrator), so their published results are not directly comparable. Every controller here runs on the ALINEA-folder scenario.
 - SUMO is deterministic for a given seed. Shield decisions depend on CP-SAT time limits and can therefore vary slightly with machine load.
+- Release 1.2.0 adds the sensor-matched override baseline, a stricter decision replay, the same-state analysis of the storage margin and fuller run provenance. The controller and the shield are unchanged from 1.1.0, so the 1.1.0 shield runs remain valid.
 - Release 1.1.0 corrects the actuation interface of release 1.0.0. In 1.0.0 the shield verified a plan whose metering rate could change every 10 s while SUMO held its first rate for 30 s, a rate of zero could be clipped to the meter's positive minimum, and the verifier did not check queues at the measured initial state. The shield evaluation was rerun with the corrected code. The 1.0.0 runs are kept in `results/i210-v1-final/` (see its README), and the development runs on seed 5 in `results/i210-dev/` still come from 1.0.0. The synthetic results are unchanged. The only record the corrected verifier would write differently is the label of one decision of the ungated HERO-like corridor baseline, which drained an initial queue above storage, and no reported number depends on it.
 - Episode files in `results/final/closed-loop-*` were written before the field `hard_violations` was computed and record 0 for every controller. The realized exceedance is in `queue_excess_vehicle_steps` and `max_queue_excess`.
 - OR-Tools 9.14 aborted one development run with an internal presolve assertion (`CpModelPresolver::DetectDuplicateColumns`). That configuration is not reported. A deployment should run the solver in a separate process.

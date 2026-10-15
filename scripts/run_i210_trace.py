@@ -70,7 +70,7 @@ def main():
     p=argparse.ArgumentParser(); p.add_argument('--seconds',type=int,default=1800); p.add_argument('--seed',type=int,default=5)
     p.add_argument('--output',required=True); p.add_argument('--repository',default='data/raw/i210')
     p.add_argument('--horizon',type=int,default=6); p.add_argument('--time-limit',type=float,default=10.)
-    p.add_argument('--mode',choices=('degrade','hard','soft','alinea','hero','shield'),default='degrade')
+    p.add_argument('--mode',choices=('degrade','hard','soft','alinea','hero','shield','override'),default='degrade')
     p.add_argument('--state',choices=('detectors','oracle'),default='detectors'); p.add_argument('--effective-length-m',type=float,default=9.8)
     p.add_argument('--calibration'); p.add_argument('--no-congestion',action='store_true')
     p.add_argument('--scenario-root',help='directory holding I210.sumocfg.xml (default: ALINEA benchmark scenario)')
@@ -88,7 +88,10 @@ def main():
     layout=extract_layout(a.repository); cells=layout['cells']; dt=layout['dt_s']; block=PERIOD_S//dt
     if a.horizon%block: p.error(f'horizon must be a multiple of {block} steps')
     inputs=[a.calibration,base/'freewayControl.py',base/'meterConfig.json',root/'I210.sumocfg.xml']
-    run_provenance=provenance(inputs)
+    # Manifest of every benchmark file the run can read: the controller configuration of the
+    # benchmark folder and the whole SUMO scenario (network, demand, detectors, calibrators).
+    scenario=[f for f in root.iterdir() if f.name not in ('Output',) and not f.name.endswith('.ipynb')]
+    run_provenance=provenance(inputs,benchmark=[*sorted(base.glob('*.json')),base/'freewayControl.py',*scenario],benchmark_root=Path(a.repository).resolve())
     out=Path(a.output); out.parent.mkdir(parents=True,exist_ok=True)
     tripinfo=out.with_suffix('.tripinfo.xml')
     (root/'Output').mkdir(exist_ok=True)  # detector outputs of the scenario are written there
@@ -120,7 +123,7 @@ def main():
     sensors=[*metering.values(),*entry.values(),*mainline_loops.values(),*lanearea.values()]
     exit_loops=json.loads((base/'onrampExitInductionLoopConfig.json').read_text())
     released={k:LoopCounter(traci,v['rampExitInductionLoops']) for k,v in exit_loops.items() if k in meters}
-    if a.mode in ('alinea','shield'):
+    if a.mode in ('alinea','shield','override'):
         # Upstream ALINEA with its original gains, setpoint, detectors and queue override.
         alinea={k:fc.ALINEA(env,meters[k],meteringUpdateFreq=30,gain=70,mainlineSetpoint=15,hasRampQueueOverride=True) for k in meters}
     if a.mode=='hero':
@@ -169,6 +172,19 @@ def main():
         if alinea:
             for k,ctl in alinea.items():
                 ctl.updateMeteringPlan(nearbyDownstreamMainlineOcc=metering[k].edgeOcc,rampQueueIndicator=entry[k].queueIndicator)
+            if a.mode=='override':
+                # Sensor-matched baseline: ALINEA plus a queue override that sees the shield's queue
+                # (lane-area vehicles and halting approach vehicles) and its storage limit, with no
+                # prediction, optimization or certificate.
+                started=perf_counter(); row={'t':env.step,'override':[],'reference':{},'executed':{}}
+                for name,m in meters.items():
+                    row['reference'][name]=greens(m)
+                    queue=int(lanearea[name].numVeh)+sum(traci.edge.getLastStepHaltingNumber(e) for e in upstream_edges[name])
+                    if queue>=int(ramps_cfg[name]['maxVehNum']*a.storage_fraction):
+                        top=max(red_for[name]); m.redPhaseLen=red_for[name][top]; m.generateMeteringPlan([m.greenPhaseLen,m.redPhaseLen],PERIOD_S); m.timer=0
+                        row['override'].append(name)
+                    row['executed'][name]=greens(m)
+                row.update(mode='override' if row['override'] else 'alinea',solve_s=perf_counter()-started); log.append(row)
             if a.mode!='shield': continue
         started=perf_counter()
         b=boundary.take(); d=[x.take() for x in arrivals]
@@ -219,6 +235,7 @@ def main():
                     'stages':audit.get('stages'),'hard_stages':audit.get('hard_stages'),
                     'certified_core':audit.get('certified_core'),'planned_excess':audit.get('planned_max_queue_excess'),
                     'exceedance_proved_minimal':audit.get('exceedance_proved_minimal'),'deviation_proved_minimal':audit.get('deviation_proved_minimal'),
+                    'first_period_excess':audit.get('max_queue_excess_first_period'),
                     'requested':list(dec.action.ramp) if dec.action else None,'reference':controller.reference,'executed':executed,'red_s':red,
                     'released_last_period':{k:c.take() for k,c in released.items()},
                     'state':{'vehicles':list(n),'queues':list(q),'previous':list(prev.ramp)},'boundary_in':b,'ramp_demand':d,'exit_permille':list(shares)})

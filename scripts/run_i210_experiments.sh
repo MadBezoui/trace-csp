@@ -58,5 +58,18 @@ for s in 6 7 8 9 10; do
   done
 done
 
-# Independent replay of every logged shield decision (no SUMO needed).
-$PY scripts/replay_i210_decisions.py $F/shield-halt-f*-s*.json $D/v2/*.json
+# Sensor-matched baseline (release 1.2.0): ALINEA with a queue override that sees the
+# shield's queue (lane-area plus halting approach vehicles) and the same 80% limit.
+for s in 6 7 8 9 10; do
+  $RUN --mode override --seed $s --storage-fraction 0.8 --output $F/override-f0.8-s$s.json
+done
+
+# Independent replay of every logged shield decision (no SUMO needed). The two held commands
+# of the development run were logged before first_period_excess existed.
+$PY scripts/replay_i210_decisions.py $F/shield-halt-f*-s*.json
+$PY scripts/replay_i210_decisions.py --allow-undeclared-hold $D/v2/*.json
+
+# Same-state analysis of the storage margin, and the benchmark manifest checked against the
+# input hashes recorded by every run.
+$PY scripts/analyse_threshold_counterfactual.py
+$PY scripts/benchmark_manifest.py --check $F/*-s*.json $D/v2/*.json

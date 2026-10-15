@@ -141,3 +141,31 @@ def test_pems_manifest_lists_81_dates_and_fitted_lanes_match_metadata():
     report = json.loads(Path('results/pems-i210e-calibration.json').read_text())
     used = {r['station'] for r in report['validation_by_station']} | {s for c in report['cells'] for s in c['stations']}
     assert used and all(fits[s] == meta[s] for s in used)
+
+
+def _replay_one(tmp_path, mutate):
+    """Replay one degraded decision of a stored run after a mutation; return the exit code."""
+    import json, subprocess, sys
+    from pathlib import Path
+    report = json.loads(Path('results/i210-final/shield-halt-f0.8-s6.json').read_text())
+    row = next(r for r in report['decisions'] if r['mode'] == 'degraded' and r['certified_core'].split('/')[2] == '0')
+    report['decisions'] = [mutate(dict(row))]
+    path = tmp_path/'run.json'; path.write_text(json.dumps(report))
+    return subprocess.run([sys.executable, 'scripts/replay_i210_decisions.py', str(path)], capture_output=True, text=True,
+                          env={'PYTHONPATH': 'src', 'PATH': '/usr/bin:/bin'}).returncode
+
+
+def test_replay_accepts_a_stored_decision(tmp_path):
+    assert _replay_one(tmp_path, lambda r: r) == 0
+
+
+def test_replay_rejects_an_understated_exceedance(tmp_path):
+    assert _replay_one(tmp_path, lambda r: {**r, 'planned_excess': 0}) == 1
+
+
+def test_replay_rejects_an_executed_command_outside_the_device_domain(tmp_path):
+    assert _replay_one(tmp_path, lambda r: {**r, 'executed': [0]+r['executed'][1:]}) == 1
+
+
+def test_replay_rejects_a_record_without_its_declared_bound(tmp_path):
+    assert _replay_one(tmp_path, lambda r: {k: v for k, v in r.items() if k != 'planned_excess'}) == 1
